@@ -33,3 +33,6 @@ if let yourString = myString {
    print("Your string does not have a value")
 }
 
+//constants
+let _const="maks"
+//must start with _ or lowercase letter
