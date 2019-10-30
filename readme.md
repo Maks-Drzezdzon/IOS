@@ -9,3 +9,8 @@ https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
 
 -online image generator
 https://appicon.co/#image-sets
+
+-create basic assets
+https://www.canva.com/
+
+
