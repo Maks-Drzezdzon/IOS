@@ -13,14 +13,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftDiceView: UIImageView!
     @IBOutlet weak var rightDiceView: UIImageView!
     
+    var leftDiceNumber = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // who.what = value
-        leftDiceView.image = #imageLiteral(resourceName: "DiceSix")
-        rightDiceView.image = #imageLiteral(resourceName: "DiceTwo")
+        // leftDiceView.image = #imageLiteral(resourceName: "DiceSix")
+        // rightDiceView.image = #imageLiteral(resourceName: "DiceTwo")
 
     }
 
-
+    @IBAction func rollButton(_ sender: UIButton) {
+        //  code goes here
+        //        leftDiceView.image = #imageLiteral(resourceName: "DiceFour")
+        //        rightDiceView.image = #imageLiteral(resourceName: "DiceFour")
+        
+        leftDiceView.image =
+            [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][leftDiceNumber]
+        
+        leftDiceNumber += 1
+    }
+    
 }
 
