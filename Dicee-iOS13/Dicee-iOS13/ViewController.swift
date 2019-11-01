@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     var leftDiceNumber = 1
     var rightDiceNumber = 5
+    var diceImagesArray = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +30,11 @@ class ViewController: UIViewController {
         // leftDiceView.image = #imageLiteral(resourceName: "DiceFour")
         // rightDiceView.image = #imageLiteral(resourceName: "DiceFour")
         
-        leftDiceView.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][leftDiceNumber]
-        rightDiceView.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][rightDiceNumber]
+        leftDiceView.image = diceImagesArray [leftDiceNumber]
+        rightDiceView.image = diceImagesArray [rightDiceNumber]
         
-        leftDiceNumber = leftDiceNumber + 1
-        rightDiceNumber = rightDiceNumber - 1
+        leftDiceNumber += 1
+        rightDiceNumber -= 1
     }
     
 }
