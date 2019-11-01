@@ -13,4 +13,9 @@ https://appicon.co/#image-sets
 -create basic assets
 https://www.canva.com/
 
+-ios design guidelines
+https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/
+
+-mobile design cheat sheet
+https://material.io/design/environment/surfaces.html#properties
 
