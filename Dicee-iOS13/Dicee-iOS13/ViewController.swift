@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Dicee-iOS13
-//
-//  Created by Angela Yu on 11/06/2019.
-//  Copyright © 2019 London App Brewery. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -13,28 +5,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftDiceView: UIImageView!
     @IBOutlet weak var rightDiceView: UIImageView!
     
-    var leftDiceNumber = 1
-    var rightDiceNumber = 5
     var diceImagesArray = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // who.what = value
-        // leftDiceView.image = #imageLiteral(resourceName: "DiceSix")
-        // rightDiceView.image = #imageLiteral(resourceName: "DiceTwo")
-
-    }
-
     @IBAction func rollButton(_ sender: UIButton) {
-        // code goes here
-        // leftDiceView.image = #imageLiteral(resourceName: "DiceFour")
-        // rightDiceView.image = #imageLiteral(resourceName: "DiceFour")
-        
-        leftDiceView.image = diceImagesArray [leftDiceNumber]
-        rightDiceView.image = diceImagesArray [rightDiceNumber]
-        
-        leftDiceNumber += 1
-        rightDiceNumber -= 1
+        let  randomRoll = Int.random(in: 0...5)
+        leftDiceView.image = diceImagesArray [randomRoll]
+        rightDiceView.image = diceImagesArray [randomRoll]
+
     }
     
 }
