@@ -21,6 +21,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-9M-PPJ">
                                 <rect key="frame" x="112" y="418.5" width="190" height="59"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learning IOS development " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZU-GW-zuU">
+                                <rect key="frame" x="103.5" y="507.5" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -29,7 +35,9 @@
                             <constraint firstItem="fEb-pf-Q9X" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="UxT-Nu-lLG"/>
                             <constraint firstAttribute="bottom" secondItem="fEb-pf-Q9X" secondAttribute="bottom" id="Z86-e3-EaQ"/>
                             <constraint firstItem="Iff-9M-PPJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aLg-EJ-yvt"/>
+                            <constraint firstItem="ZZU-GW-zuU" firstAttribute="top" secondItem="Iff-9M-PPJ" secondAttribute="bottom" constant="30" id="dOq-hb-mcE"/>
                             <constraint firstItem="Iff-9M-PPJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qxP-Yg-GLn"/>
+                            <constraint firstItem="ZZU-GW-zuU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uj2-7q-Pyx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
