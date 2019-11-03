@@ -15,19 +15,10 @@ class ViewController: UIViewController {
     let eggTimes = ["Soft":5, "Hard":12, "Medium":7]
 
     @IBAction func hardnessSelected(_ sender: UIButton) {
-        let hardness = sender.currentTitle
-        print(eggTimes[hardness])
+        let hardness = sender.currentTitle!
+        // ! removes safety check
+        let result = eggTimes[hardness]!
         
-        switch hardness {
-        case "Soft":
-            print(softTime)
-        case "Medium":
-            print(medTime)
-        case "Hard":
-            print(hardTime)
-        default:
-            print("Error")
-        }
     }
     
 }
