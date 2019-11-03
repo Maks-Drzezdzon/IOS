@@ -16,11 +16,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyPressed(_ sender: UIButton) {
-        playSound()
+        playSound(noteKey: sender.currentTitle!)
     }
     
-    func playSound() {
-        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
+    func playSound(noteKey:String) {
+        let url = Bundle.main.url(forResource: "\(noteKey)", withExtension: "wav")
             //use option and click on method for apple doc
             player = try! AVAudioPlayer(contentsOf: url!)
             guard let player = player else { return }
