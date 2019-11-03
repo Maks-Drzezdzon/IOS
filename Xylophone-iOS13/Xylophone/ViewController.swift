@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation //audio visual foundation mud
+import Darwin
 
 class ViewController: UIViewController {
     var player: AVAudioPlayer?
@@ -16,7 +17,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyPressed(_ sender: UIButton) {
+        // ! tells that button will not be nil
         playSound(noteKey: sender.currentTitle!)
+        sleep(1)
     }
     
     func playSound(noteKey:String) {
