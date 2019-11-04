@@ -120,6 +120,21 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="346" width="288" height="134"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B3R-Ky-kYe">
+                                                <rect key="frame" x="0.0" y="64.5" width="288" height="6"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="dG5-ZF-uPe"/>
+                                                </constraints>
+                                                <color key="progressTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="trackTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="B3R-Ky-kYe" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="86u-lJ-N6R"/>
+                                            <constraint firstAttribute="trailing" secondItem="B3R-Ky-kYe" secondAttribute="trailing" id="UL9-6L-VWB"/>
+                                            <constraint firstItem="B3R-Ky-kYe" firstAttribute="leading" secondItem="nJN-th-c5K" secondAttribute="leading" id="ihb-bg-NFT"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -133,6 +148,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="B3R-Ky-kYe" id="G5U-nv-nar"/>
+                        <outlet property="titleLabel" destination="XLm-5r-pSP" id="Pdw-9x-FmU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
