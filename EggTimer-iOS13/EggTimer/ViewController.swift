@@ -9,8 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let eggTimes = ["Soft":10, "Hard":720, "Medium":420]
-    var secondsLeft = 60
+    let eggTimes = ["Soft":300, "Hard":720, "Medium":420]
     var timer = Timer()
     var totalTime = 0
     var secPassed = 0
@@ -25,12 +24,17 @@ class ViewController: UIViewController {
         // ! removes safety check
         totalTime = eggTimes[hardness]!
         
+        //reset data
+        progressBar.progress = 0.0
+        secPassed = 0
+        titleLabel.text = hardness
+        
         Timer.scheduledTimer(timeInterval: 1.0,target: self,selector:#selector(updateTimer),userInfo:nil, repeats: true)
     }
     // selector comes from obj c
     @objc func updateTimer(){
         if secPassed < totalTime{
-            secondsLeft += 1
+            secPassed += 1
             let progress = Float(secPassed) / Float(totalTime)
             progressBar.progress = progress
         } else{
