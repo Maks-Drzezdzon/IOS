@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
+    
+    // replace later with api for random questions etc
     var questionNumber = 0
     let questions = [
         ["1+2=3", "true"],
