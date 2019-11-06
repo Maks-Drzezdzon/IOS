@@ -14,18 +14,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
-    
-    let questions = ["1+2=3", "2+2=4", "2+2=22"]
+    var questionNumber = 0
+    let questions = [
+        ["1+2=3", "true"],
+        ["2+2=4", "true"],
+        ["2+2=22", "true"]
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
         
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
+        let userAnswer = sender.currentTitle
+        let actualAnswer = questions[questionNumber][1]
         
-        questionText.text = questions.randomElement()
+        if userAnswer == actualAnswer {
+            print("filler pass")
+        }else{
+            print("filler fail")
+        }
         
+        if questionNumber + 1 < questions.count {
+            questionNumber += 1
+        }
+        updateUI()
+    }
+    func updateUI(){
+        questionText.text = questions[questionNumber][0]
     }
     
 }
