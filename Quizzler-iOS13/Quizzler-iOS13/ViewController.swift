@@ -52,6 +52,8 @@ class ViewController: UIViewController {
         questionText.text = questions[questionNumber].text
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
+        // add 1 to start with some prog and have a full bar later
+        progressBar.progress = Float(questionNumber + 1) / Float(questions.count)
     }
     
 }
