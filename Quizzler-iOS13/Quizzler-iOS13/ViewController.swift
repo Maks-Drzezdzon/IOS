@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     // replace later with api for random questions etc
     var questionNumber = 0
     let questions = [
-        Question(text:"1+2=3", answer:"true"),
-        Question(text:"2+2=4", answer:"true"),
-        Question(text:"2+2=22", answer:"false")
+        Question(q:"1+2=3", a:"True"),
+        Question(q:"2+2=4", a:"True"),
+        Question(q:"2+2=22", a:"False")
     ]
     
     override func viewDidLoad() {
@@ -34,9 +34,10 @@ class ViewController: UIViewController {
         let actualAnswer = questions[questionNumber].answer
         
         if userAnswer == actualAnswer {
-            print("filler pass")
+            //tap into sender component to change color
+            sender.backgroundColor = UIColor.green
         }else{
-            print("filler fail")
+            sender.backgroundColor = UIColor.red
         }
         
         if questionNumber + 1 < questions.count {
@@ -44,10 +45,13 @@ class ViewController: UIViewController {
         }else{
             questionNumber = 0
         }
-        updateUI()
+        
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo:nil, repeats: false)
     }
-    func updateUI(){
-        questionText.text = questions[questionNumber][0]
+    @objc func updateUI(){
+        questionText.text = questions[questionNumber].text
+        trueButton.backgroundColor = UIColor.clear
+        falseButton.backgroundColor = UIColor.clear
     }
     
 }
