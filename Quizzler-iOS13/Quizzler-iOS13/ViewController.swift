@@ -19,10 +19,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionText.text = questions[0]
+        
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
+        
+        questionText.text = questions.randomElement()
+        
     }
     
 }
