@@ -8,10 +8,10 @@ struct Town {
     var citizens:[String]
     var resources:[String: Int]
     
-    init(townName: String, people: [String], stats:[String:Int]){
-        name = townName
-        citizens = people
-        resources = stats
+    init(name: String, people: [String], stats:[String:Int]){
+        self.name = name
+        self.citizens = people
+        self.resources = stats
     }
     
     func fortify(){
@@ -19,7 +19,7 @@ struct Town {
     }
 }
 
-var myTown = Town(townName: "town name", people: ["person", "person 2"], stats: ["gold" : 100])
+var myTown = Town(name: "town name", people: ["person", "person 2"], stats: ["gold" : 100])
 print(myTown.name)
 print(myTown.citizens[0])
 print(myTown.resources["gold"]!)

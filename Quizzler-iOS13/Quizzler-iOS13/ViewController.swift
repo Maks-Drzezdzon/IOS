@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     // replace later with api for random questions etc
     var questionNumber = 0
     let questions = [
-        ["1+2=3", "true"],
-        ["2+2=4", "true"],
-        ["2+2=22", "true"]
+        Question(text:"1+2=3", answer:"true"),
+        Question(text:"2+2=4", answer:"true"),
+        Question(text:"2+2=22", answer:"false")
     ]
     
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle
-        let actualAnswer = questions[questionNumber][1]
+        let actualAnswer = questions[questionNumber].answer
         
         if userAnswer == actualAnswer {
             print("filler pass")
