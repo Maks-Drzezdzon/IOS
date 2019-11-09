@@ -1,14 +1,10 @@
-//
-//  QuizData.swift
-//  Quizzler-iOS13
-//
-//  Created by Maks Drzezdzon on 09/11/2019.
-//  Copyright © 2019 The App Brewery. All rights reserved.
-//
-
 import Foundation
 
-struct QuizData {
+struct QuizBrain {
+    
+    var questionNumber = 0
+    var score = 0
+    
     let quiz = [
         Question(q: "Which is the largest organ in the human body?", a: ["Heart", "Skin", "Large Intestine"], correctAnswer: "Skin"),
         Question(q: "Five dollars is worth how many nickels?", a: ["25", "50", "100"], correctAnswer: "100"),
@@ -22,42 +18,39 @@ struct QuizData {
         Question(q: "Where is Tasmania located?", a: ["Indonesia", "Australia", "Scotland"], correctAnswer: "Australia")
     ]
     
-    var questionNumber = 0
-    var score = 0
-    
-    func getAnswers() -> [String]{
-        return quiz[questionNumber].answers
-    }
-    
-    mutating func getScore() -> Int{
-        return score
-    }
-    
-    func getQuestionText() -> String{
+    func getQuestionText() -> String {
         return quiz[questionNumber].text
     }
     
-    func  getProgress() -> Float {
+    //Need a way of fetching the answer choices.
+    func getAnswers() -> [String] {
+        return quiz[questionNumber].answers
+    }
+    
+    func getProgress() -> Float {
         return Float(questionNumber) / Float(quiz.count)
     }
     
-    mutating func nextQuestion(){
-        // mutating lets the variable change and update
+    mutating func getScore() -> Int {
+        return score
+    }
+    
+     mutating func nextQuestion() {
+        
         if questionNumber + 1 < quiz.count {
             questionNumber += 1
-        }else{
+        } else {
             questionNumber = 0
         }
     }
     
-    mutating func checkAnswer(_ userAnswer: String) -> Bool{
-        
-        if userAnswer == quiz[questionNumber].answer {
+    mutating func checkAnswer(userAnswer: String) -> Bool {
+        //Need to change answer to rightAnswer here. 
+        if userAnswer == quiz[questionNumber].rightAnswer {
             score += 1
             return true
-        }else{
+        } else {
             return false
         }
-        
     }
 }
