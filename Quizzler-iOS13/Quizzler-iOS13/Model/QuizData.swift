@@ -14,7 +14,13 @@ struct QuizData {
         Question(q:"2+2=4", a:"True"),
         Question(q:"2+2=22", a:"False")
     ]
+    
     var questionNumber = 0
+    var score = 0
+    
+    mutating func getScore() -> Int{
+        return score
+    }
     
     func getQuestionText() -> String{
         return quiz[questionNumber].text
@@ -31,12 +37,14 @@ struct QuizData {
             questionNumber += 1
         }else{
             questionNumber = 0
+            score = 0
         }
     }
     
-    func checkAnswer(_ userAnswer: String) -> Bool{
+    mutating func checkAnswer(_ userAnswer: String) -> Bool{
         
         if userAnswer == quiz[questionNumber].answer {
+            score += 1
             return true
         }else{
             return false

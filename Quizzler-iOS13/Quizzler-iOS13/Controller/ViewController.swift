@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionText: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
         questionText.text = quizData.getQuestionText()
         progressBar.progress = quizData.getProgress()
         
+        scoreLabel.text = "Score \(quizData.getScore())"
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
         // add 1 to start with some prog and have a full bar later
