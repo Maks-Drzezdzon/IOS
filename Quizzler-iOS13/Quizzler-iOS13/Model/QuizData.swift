@@ -25,8 +25,9 @@ struct QuizData {
         return progress
     }
     
-    func nextQuestion(){
-        if questionNumber + 1 < questions.count {
+    mutating func nextQuestion(){
+        // mutating lets the variable change and update
+        if questionNumber + 1 < quiz.count {
             questionNumber += 1
         }else{
             questionNumber = 0
