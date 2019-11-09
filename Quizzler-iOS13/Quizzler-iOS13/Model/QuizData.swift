@@ -25,6 +25,10 @@ struct QuizData {
     var questionNumber = 0
     var score = 0
     
+    func getAnswers() ->[String]{
+        quiz[questionNumber].answers
+    }
+    
     mutating func getScore() -> Int{
         return score
     }

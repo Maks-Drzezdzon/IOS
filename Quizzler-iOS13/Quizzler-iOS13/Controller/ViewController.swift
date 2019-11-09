@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
     
-    
     // replace later with api for random questions etc
     var quizData = QuizData()
     override func viewDidLoad() {
@@ -41,11 +40,13 @@ class ViewController: UIViewController {
         
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo:nil, repeats: false)
     }
+    
     @objc func updateUI(){
         questionText.text = quizData.getQuestionText()
         progressBar.progress = quizData.getProgress()
-        
         scoreLabel.text = "Score \(quizData.getScore())"
+        
+        let answerChoices = quizData.getAnswers()
         
         answerButton1.backgroundColor = UIColor.clear
         answerButton2.backgroundColor = UIColor.clear
