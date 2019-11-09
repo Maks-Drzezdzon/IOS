@@ -1,6 +1,6 @@
 import Foundation
 
-struct QuizBrain {
+struct QuizData {
     
     var questionNumber = 0
     var score = 0

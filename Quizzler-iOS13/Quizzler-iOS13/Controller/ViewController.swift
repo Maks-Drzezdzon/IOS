@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     
-    var quizBrain = QuizBrain()
+    var quizData = QuizData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         let userAnswer = sender.currentTitle!
         
-        let userGotItRight = quizBrain.checkAnswer(userAnswer: userAnswer)
+        let userGotItRight = quizData.checkAnswer(userAnswer: userAnswer)
         
         if userGotItRight {
             sender.backgroundColor = UIColor.green
@@ -33,22 +33,22 @@ class ViewController: UIViewController {
             sender.backgroundColor = UIColor.red
         }
         
-        quizBrain.nextQuestion()
+        quizData.nextQuestion()
         
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
     @objc func updateUI() {
-        questionLabel.text = quizBrain.getQuestionText()
+        questionLabel.text = quizData.getQuestionText()
         
         //Need to fetch the answers and update the button titles using the setTitle method. 
-        let answerChoices = quizBrain.getAnswers()
+        let answerChoices = quizData.getAnswers()
         choice1.setTitle(answerChoices[0], for: .normal)
         choice2.setTitle(answerChoices[1], for: .normal)
         choice3.setTitle(answerChoices[2], for: .normal)
         
-        progressBar.progress = quizBrain.getProgress()
-        scoreLabel.text = "Score: \(quizBrain.getScore())"
+        progressBar.progress = quizData.getProgress()
+        scoreLabel.text = "Score: \(quizData.getScore())"
         
         choice1.backgroundColor = UIColor.clear
         choice2.backgroundColor = UIColor.clear
