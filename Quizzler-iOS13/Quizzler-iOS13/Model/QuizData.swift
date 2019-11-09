@@ -25,8 +25,8 @@ struct QuizData {
     var questionNumber = 0
     var score = 0
     
-    func getAnswers() ->[String]{
-        quiz[questionNumber].answers
+    func getAnswers() -> [String]{
+        return quiz[questionNumber].answers
     }
     
     mutating func getScore() -> Int{
@@ -38,8 +38,7 @@ struct QuizData {
     }
     
     func  getProgress() -> Float {
-        let progress = Float(questionNumber) / Float(quiz.count)
-        return progress
+        return Float(questionNumber) / Float(quiz.count)
     }
     
     mutating func nextQuestion(){
@@ -48,7 +47,6 @@ struct QuizData {
             questionNumber += 1
         }else{
             questionNumber = 0
-            score = 0
         }
     }
     

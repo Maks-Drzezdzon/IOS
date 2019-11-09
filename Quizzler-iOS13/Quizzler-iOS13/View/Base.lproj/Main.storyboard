@@ -104,7 +104,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="answerButton2" destination="19Z-3z-DDL" id="rGz-L0-T1N"/>
+                        <outlet property="answerButton2" destination="19Z-3z-DDL" id="TDh-KY-Sat"/>
                         <outlet property="answerButton3" destination="tbn-vQ-GyC" id="yMT-wk-xOi"/>
                         <outlet property="falseButton" destination="tbn-vQ-GyC" id="fiz-aC-vwq"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="CLS-S7-UHp"/>

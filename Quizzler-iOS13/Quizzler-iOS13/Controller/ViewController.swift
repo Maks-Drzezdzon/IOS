@@ -12,13 +12,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionText: UILabel!
+    
     @IBOutlet weak var progressBar: UIProgressView!
+    
     @IBOutlet weak var answerButton1: UIButton!
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
     
     // replace later with api for random questions etc
     var quizData = QuizData()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -47,6 +50,9 @@ class ViewController: UIViewController {
         scoreLabel.text = "Score \(quizData.getScore())"
         
         let answerChoices = quizData.getAnswers()
+        answerButton1.setTitle(answerChoices[0], for: .normal)
+        answerButton2.setTitle(answerChoices[1], for: .normal)
+        answerButton3.setTitle(answerChoices[2], for: .normal)
         
         answerButton1.backgroundColor = UIColor.clear
         answerButton2.backgroundColor = UIColor.clear
