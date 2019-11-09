@@ -16,6 +16,23 @@ struct QuizData {
     ]
     var questionNumber = 0
     
+    func getQuestionText() -> String{
+        return quiz[questionNumber].text
+    }
+    
+    func  getProgress() -> Float {
+        let progress = Float(questionNumber) / Float(quiz.count)
+        return progress
+    }
+    
+    func nextQuestion(){
+        if questionNumber + 1 < questions.count {
+            questionNumber += 1
+        }else{
+            questionNumber = 0
+        }
+    }
+    
     func checkAnswer(_ userAnswer: String) -> Bool{
         
         if userAnswer == quiz[questionNumber].answer {
