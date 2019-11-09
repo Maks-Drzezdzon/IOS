@@ -16,13 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var falseButton: UIButton!
     
     // replace later with api for random questions etc
-    var questionNumber = 0
-    let questions = [
-        Question(q:"1+2=3", a:"True"),
-        Question(q:"2+2=4", a:"True"),
-        Question(q:"2+2=22", a:"False")
-    ]
-    
+    var quizData = QuizData()
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -30,8 +24,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
-        let userAnswer = sender.currentTitle
-        let actualAnswer = questions[questionNumber].answer
+        let userAnswer = sender.currentTitle!
+        quizData.checkAnswer(userAnswer)
         
         if userAnswer == actualAnswer {
             //tap into sender component to change color
