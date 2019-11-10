@@ -46,6 +46,14 @@ class CalculateViewController: UIViewController {
         self.present(secondViewCtrl, animated: true, completion: nil)*/
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResultsController" {
+            // pass data to as! with downcasting 
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.bmiValue = "0.0"
+        }
+    }
 
 }
 
