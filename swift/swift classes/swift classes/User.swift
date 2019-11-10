@@ -1,6 +1,11 @@
 class User {
-    var name = "name"
-    var age = 23
+    var name: String
+    var age: Int
+    
+    init(name: String, age:Int) {
+        self.age = age
+        self.name = name
+    }
     
     func move()  {
         print("i can move")
