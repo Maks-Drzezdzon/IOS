@@ -10,7 +10,7 @@ import UIKit
 
 class CalculateViewController: UIViewController {
     
-    var bmiValue = "0.0"
+    var calcData = CalculatorData()
     @IBOutlet weak var hLabel: UILabel!
     @IBOutlet weak var wLabel: UILabel!
     @IBOutlet weak var hSlider: UISlider!
@@ -34,8 +34,7 @@ class CalculateViewController: UIViewController {
         let height = hSlider.value
         let weight = wSlider.value
         
-        let bmi = weight / (height * 2)
-        bmiValue = String(format: "%.1f", bmi )
+        calcData.calculateBMI(height: height, weight:weight)
         // prettymuch intents in ios
         // withIdentifier is the label added to segue, self because its being passed to this controller
         self.performSegue(withIdentifier: "goToResultsController", sender: self)
@@ -52,7 +51,7 @@ class CalculateViewController: UIViewController {
         if segue.identifier == "goToResultsController" {
             // pass data to as! with downcasting
             let destinationVC = segue.destination as! ResultViewController
-            destinationVC.bmiValue = bmiValue
+            destinationVC.bmiValue = calcData.getBMIValue()
         }
     }
 
