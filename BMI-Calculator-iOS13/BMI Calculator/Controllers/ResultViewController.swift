@@ -10,10 +10,12 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bmiLabel.text = bmiValue
     }
     
     @IBAction func reCalculateButton(_ sender: UIButton) {
+        //this will layer the screen ontop of the other viewController
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

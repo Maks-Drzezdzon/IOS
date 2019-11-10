@@ -188,7 +188,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="reCalcbUTTON:" destination="lkq-xS-Cin" eventType="touchUpInside" id="tZL-Mz-3PJ"/>
                                     <action selector="reCalculateButton:" destination="lkq-xS-Cin" eventType="touchUpInside" id="K96-Hb-Swh"/>
                                 </connections>
                             </button>
