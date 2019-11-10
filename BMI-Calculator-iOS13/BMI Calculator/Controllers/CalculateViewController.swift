@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
 
     @IBOutlet weak var hLabel: UILabel!
     @IBOutlet weak var wLabel: UILabel!
@@ -35,10 +35,15 @@ class ViewController: UIViewController {
         
         let bmi = weight / (height * 2)
         
-        let secondViewCtrl = SecondViewController()
-        secondViewCtrl.bmiValue = String(format: "%.1f", bmi)
+        // prettymuch intents in ios
+        // withIdentifier is the label added to segue, self because its being passed to this controller
+        self.performSegue(withIdentifier: "goToResultsController", sender: self)
         
-        self.present(secondViewCtrl, animated: true, completion: nil)
+        /*
+         // code for secondViewController
+         let secondViewCtrl = SecondViewController()
+        secondViewCtrl.bmiValue = String(format: "%.1f", bmi)
+        self.present(secondViewCtrl, animated: true, completion: nil)*/
         
     }
 
