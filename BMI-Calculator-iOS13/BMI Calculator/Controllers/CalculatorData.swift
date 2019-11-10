@@ -9,17 +9,18 @@
 import Foundation
 
 struct CalculatorData {
-    var bmi: Float?
+    var bmi: BMI?
     
     
     mutating func calculateBMI(height: Float, weight: Float) {
-        bmi = weight / (height * 2)
+        let bmiValue = weight / (height * 2)
+        bmi = BMI(value: bmiValue, advice: <#T##String#>, color: <#T##UIColor#>)
         
     }
     
     func getBMIValue() -> String {
         // set default 
-        let bmiFormated = String(format: "%.1f", bmi ?? 0.0)
+        let bmiFormated = String(format: "%.1f", bmi?.value ?? 0.0)
         return bmiFormated
        
     }
