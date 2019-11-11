@@ -15,6 +15,7 @@
 		934BBBEC2379DACF004F308D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934BBBEA2379DACF004F308D /* LaunchScreen.storyboard */; };
 		934BBBF72379DACF004F308D /* FacebookUICloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBBF62379DACF004F308D /* FacebookUICloneTests.swift */; };
 		934BBC022379DAD0004F308D /* FacebookUICloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBC012379DAD0004F308D /* FacebookUICloneUITests.swift */; };
+		934BBC102379DC95004F308D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBC0F2379DC95004F308D /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		934BBBFD2379DACF004F308D /* FacebookUICloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookUICloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		934BBC012379DAD0004F308D /* FacebookUICloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookUICloneUITests.swift; sourceTree = "<group>"; };
 		934BBC032379DAD0004F308D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934BBC0F2379DC95004F308D /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				934BBBEA2379DACF004F308D /* LaunchScreen.storyboard */,
 				934BBBED2379DACF004F308D /* Info.plist */,
 				934BBBE72379DACF004F308D /* Preview Content */,
+				934BBC0F2379DC95004F308D /* MainController.swift */,
 			);
 			path = FacebookUIClone;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934BBC102379DC95004F308D /* MainController.swift in Sources */,
 				934BBBE02379DACE004F308D /* AppDelegate.swift in Sources */,
 				934BBBE22379DACE004F308D /* SceneDelegate.swift in Sources */,
 				934BBBE42379DACE004F308D /* ContentView.swift in Sources */,
