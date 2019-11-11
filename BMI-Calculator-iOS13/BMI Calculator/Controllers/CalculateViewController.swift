@@ -52,6 +52,8 @@ class CalculateViewController: UIViewController {
             // pass data to as! with downcasting
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.bmiValue = calcData.getBMIValue()
+            destinationVC.advice = calculatorData.getAdvice()
+            destinationVC.color = calculatorData.getColor()
         }
     }
 
