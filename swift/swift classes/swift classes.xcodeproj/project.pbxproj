@@ -13,7 +13,6 @@
 		93D87DD6237B2F5700013ACF /* dataStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D87DD5237B2F5700013ACF /* dataStructs.swift */; };
 		93D87DD8237B2F6C00013ACF /* conditionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D87DD7237B2F6C00013ACF /* conditionals.swift */; };
 		93D87DDA237B2F8100013ACF /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D87DD9237B2F8100013ACF /* protocols.swift */; };
-		93D87DDC237B2F9300013ACF /* syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D87DDB237B2F9300013ACF /* syntax.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +35,6 @@
 		93D87DD5237B2F5700013ACF /* dataStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStructs.swift; sourceTree = "<group>"; };
 		93D87DD7237B2F6C00013ACF /* conditionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conditionals.swift; sourceTree = "<group>"; };
 		93D87DD9237B2F8100013ACF /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
-		93D87DDB237B2F9300013ACF /* syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syntax.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 				93D87DD5237B2F5700013ACF /* dataStructs.swift */,
 				93D87DD7237B2F6C00013ACF /* conditionals.swift */,
 				93D87DD9237B2F8100013ACF /* protocols.swift */,
-				93D87DDB237B2F9300013ACF /* syntax.swift */,
 			);
 			path = "swift classes";
 			sourceTree = "<group>";
@@ -138,7 +135,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D87DDC237B2F9300013ACF /* syntax.swift in Sources */,
 				93C05F59237875E200D08252 /* User.swift in Sources */,
 				93C05F52237875BE00D08252 /* main.swift in Sources */,
 				93D87DD6237B2F5700013ACF /* dataStructs.swift in Sources */,
