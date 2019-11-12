@@ -40,6 +40,7 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        // store search data before reset
         searchTextField.text = ""
     }
 }
