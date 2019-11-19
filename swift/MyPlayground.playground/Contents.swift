@@ -73,9 +73,20 @@ penguin.swim()
 
 
 
-let pizzaInches: Int = 14
+var pizzaInches: Int = 14{
+    willSet{
+        print(newValue)
+    }
+    didSet{
+        if pizzaInches >= 18{
+            print("invalid size, pizza set to 18 inches")
+            pizzaInches=oldValue
+        }
+    }
+}
 let slicesPerPerson: Int = 4
 var numberOfPeople: Int = 12
+
 var numberOfSlices: Int {
     //getter in swift
     get{
