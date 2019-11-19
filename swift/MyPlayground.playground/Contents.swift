@@ -24,3 +24,37 @@ print(myTown.name)
 print(myTown.citizens[0])
 print(myTown.resources["gold"]!)
 
+protocol CanFly{
+    func fly()
+}
+
+class Bird{
+    var isFemale = true
+    func  layEgg() {
+        print("lay egg")
+    }
+    func fly(){
+        print("fly")
+    }
+    
+    
+}
+
+class Eagle : Bird{
+    func soar(){
+        print("eagle glides in air using air currents")
+    }
+}
+
+class Penguin: Bird {
+    func swim() {
+        print("swims")
+    }
+}
+
+struct FlyingMuseum{
+    func flyingDemo(flyingObject : Bird){
+        flyingObject.fly()
+        
+    }
+}
