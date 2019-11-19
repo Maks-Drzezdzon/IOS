@@ -33,17 +33,17 @@ class Bird{
     func  layEgg() {
         print("lay egg")
     }
-    func fly(){
-        print("fly")
-    }
-    
-    
 }
 
-class Eagle : Bird{
+class Eagle : Bird, CanFly{
+    func fly() {
+        print("eagle can fly")
+    }
+    
     func soar(){
         print("eagle glides in air using air currents")
     }
+   
 }
 
 class Penguin: Bird {
@@ -53,8 +53,52 @@ class Penguin: Bird {
 }
 
 struct FlyingMuseum{
-    func flyingDemo(flyingObject : Bird){
+    func flyingDemo(flyingObject : CanFly){
         flyingObject.fly()
         
     }
+    struct AirPlane: CanFly{
+        func fly() {
+            print("fly")
+        }
+    }
 }
+
+
+let penguin = Penguin()
+penguin.swim()
+//cant fly because it does not implement the canfly protocol much like interfaces in java
+
+
+
+
+
+let pizzaInches: Int = 14
+let slicesPerPerson: Int = 4
+var numberOfPeople: Int = 12
+var numberOfSlices: Int {
+    //getter in swift
+    get{
+        return pizzaInches - 4
+    }
+    //setter in swift
+    set{
+        print("number of slices is now \(newValue)")
+    }
+    //without these you can not reassign values
+    //numberOfSlices=10
+}
+
+var numberOfPizza: Int {
+    get{
+        let numberOfPeopleFedPerPizza = numberOfSlices/slicesPerPerson
+        return numberOfPeople/numberOfPeopleFedPerPizza
+    }
+    set{
+        let totalSlices = numberOfSlices * newValue
+        numberOfPeople = totalSlices/slicesPerPerson
+    }
+}
+
+print("you can feed \(numberOfPeople) people")
+
