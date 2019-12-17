@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930892A423A94C0700B0D48D /* PhotosGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930892A323A94C0700B0D48D /* PhotosGridController.swift */; };
 		934BBBE02379DACE004F308D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBBDF2379DACE004F308D /* AppDelegate.swift */; };
 		934BBBE22379DACE004F308D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBBE12379DACE004F308D /* SceneDelegate.swift */; };
 		934BBBE42379DACE004F308D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBBE32379DACE004F308D /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 		934BBBF72379DACF004F308D /* FacebookUICloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBBF62379DACF004F308D /* FacebookUICloneTests.swift */; };
 		934BBC022379DAD0004F308D /* FacebookUICloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBC012379DAD0004F308D /* FacebookUICloneUITests.swift */; };
 		934BBC102379DC95004F308D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BBC0F2379DC95004F308D /* MainController.swift */; };
+		937B271C23A845020033BEBB /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 937B271B23A845020033BEBB /* LBTATools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930892A323A94C0700B0D48D /* PhotosGridController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGridController.swift; sourceTree = "<group>"; };
 		934BBBDC2379DACE004F308D /* FacebookUIClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookUIClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934BBBDF2379DACE004F308D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		934BBBE12379DACE004F308D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937B271C23A845020033BEBB /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +113,7 @@
 				934BBBED2379DACF004F308D /* Info.plist */,
 				934BBBE72379DACF004F308D /* Preview Content */,
 				934BBC0F2379DC95004F308D /* MainController.swift */,
+				930892A323A94C0700B0D48D /* PhotosGridController.swift */,
 			);
 			path = FacebookUIClone;
 			sourceTree = "<group>";
@@ -155,6 +160,9 @@
 			dependencies = (
 			);
 			name = FacebookUIClone;
+			packageProductDependencies = (
+				937B271B23A845020033BEBB /* LBTATools */,
+			);
 			productName = FacebookUIClone;
 			productReference = 934BBBDC2379DACE004F308D /* FacebookUIClone.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 934BBBD32379DACE004F308D;
+			packageReferences = (
+				937B271A23A845020033BEBB /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = 934BBBDD2379DACE004F308D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,6 +284,7 @@
 				934BBC102379DC95004F308D /* MainController.swift in Sources */,
 				934BBBE02379DACE004F308D /* AppDelegate.swift in Sources */,
 				934BBBE22379DACE004F308D /* SceneDelegate.swift in Sources */,
+				930892A423A94C0700B0D48D /* PhotosGridController.swift in Sources */,
 				934BBBE42379DACE004F308D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		937B271A23A845020033BEBB /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		937B271B23A845020033BEBB /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 937B271A23A845020033BEBB /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 934BBBD42379DACE004F308D /* Project object */;
 }
