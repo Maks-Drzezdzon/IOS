@@ -30,6 +30,6 @@ https://developer.apple.com/documentation/
 https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
 
 ---App demos---
+<img src="./images/8ball.png">
 
-![8 ball app](images/8ball.png = 150x100)
 
