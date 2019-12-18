@@ -4,6 +4,10 @@ im going to be working on this repo more in the future when i get a macbook for 
 -------------------------------------------------------
 USEFUL LINKS
 
+-Color templates
+https://flatuicolors.com/palette/defo
+https://www.uicolor.xyz/#/hex-to-ui
+
 -Screen p-sizes for Iphones
 https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
 
@@ -24,4 +28,6 @@ https://developer.apple.com/documentation/
 
 -apple sf symbols free assets/icons
 https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
+
+---TODO add images for demo here---
 
