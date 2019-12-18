@@ -32,7 +32,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 ---App demos---
 
 <br>
-<h>Forecast app</h>
+<h><b>Forecast app</b></h>
 <p>pull data from api, present it, change icons to represent forecast</p>
 <br>
 <img src="./images/8ball.png" width="100">
