@@ -31,5 +31,6 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 
 ---App demos---
 
-❮img src="images/8ball.png" width="100" ❯
+<h1>8 Ball app</h1>
+❮img src="https://github.com/Maksthorn/IOS/tree/master/images/8ball.png" width="100" ❯
 
