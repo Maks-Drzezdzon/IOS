@@ -44,7 +44,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <img src="./images/fbookNotDone.png" width="100">
 
 <br>
-<h>BMI calc</h>
+<h><b>BMI calc</b></h>
 <p>multi view app, change color and give user feedback</p>
 <br>
 <div class="row">
@@ -59,31 +59,31 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 </div>
 
 <br>
-<h>Egg timer app</h>
+<h><b>Egg timer app</b></h>
 <p></p>
 <br>
 <img src="./images/egg.png" width="100">
 
 <br>
-<h>Roll dice app</h>
+<h><b>Roll dice app</b></h>
 <p>basic functions, buttons, views, building reusable SwiftUI components</p>
 <br>
 <img src="./images/8ball.png" width="100">
 
 <br>
-<h>Business card layout</h>
+<h><b>Business card layout</b></h>
 <p>layout app</p>
 <br>
 <img src="./images/card.png" width="100">
 
 <br>
-<h>8 Ball app</h>
+<h><b>8 Ball app</b></h>
 <p>basic functions, buttons, views</p>
 <br>
 <img src="./images/8ball.png" width="100">
 
 <br>
-<h>quiz app</h>
+<h><b>quiz app</b></h>
 <p>Dynamic progress bar</p>
 <br>
 <img src="./images/quiz.png" width="100">
