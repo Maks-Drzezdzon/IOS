@@ -30,6 +30,9 @@ https://developer.apple.com/documentation/
 https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
 
 ---App demos---
+<br>
+<h>8 ball app</h>
+<br>
 <img src="./images/8ball.png" width="100">
 
 
