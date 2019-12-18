@@ -68,7 +68,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <h><b>Roll dice app</b></h>
 <p>basic functions, buttons, views, building reusable SwiftUI components</p>
 <br>
-<img src="./images/8ball.png" width="100">
+<img src="./images/dice.png" width="100">
 
 <br>
 <h><b>Business card layout</b></h>
