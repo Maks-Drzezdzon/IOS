@@ -30,28 +30,22 @@ https://developer.apple.com/documentation/
 https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
 
 ---App demos---
-<br>
-<h>8 Ball app</h>
-<br>
-<img src="./images/8ball.png" width="100">
-
-<br>
-<h>quiz app</h>
-<br>
-<img src="./images/quiz.png" width="100">
 
 <br>
 <h>Forecast app</h>
+<p>pull data from api, present it, change icons to represent forecast</p>
 <br>
 <img src="./images/8ball.png" width="100">
 
 <br>
 <h>Facebook layout app (needs more work)</h>
+<p>making layouts with external libiraries</p>
 <br>
 <img src="./images/fbookNotDone.png" width="100">
 
 <br>
 <h>BMI calc</h>
+<p>multi view app, change color and give user feedback</p>
 <br>
 <div class="row">
   <div class="column">
@@ -66,18 +60,34 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 
 <br>
 <h>Egg timer app</h>
+<p></p>
 <br>
 <img src="./images/egg.png" width="100">
 
 <br>
 <h>Roll dice app</h>
+<p>basic functions, buttons, views, building reusable SwiftUI components</p>
 <br>
 <img src="./images/8ball.png" width="100">
 
 <br>
 <h>Business card layout</h>
+<p>layout app</p>
 <br>
 <img src="./images/card.png" width="100">
+
+<br>
+<h>8 Ball app</h>
+<p>basic functions, buttons, views</p>
+<br>
+<img src="./images/8ball.png" width="100">
+
+<br>
+<h>quiz app</h>
+<p>Dynamic progress bar</p>
+<br>
+<img src="./images/quiz.png" width="100">
+
 
 
 
