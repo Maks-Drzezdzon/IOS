@@ -30,5 +30,5 @@ https://developer.apple.com/documentation/
 https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
 
 ---App demos---
-![Test image 1](https://github.com/Maksthorn/IOS/tree/master/images/8ball.png)
+![Test image 1](/images/8ball.png)
 
