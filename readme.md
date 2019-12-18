@@ -31,8 +31,46 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 
 ---App demos---
 <br>
-<h>8 ball app</h>
+<h>8 Ball app</h>
 <br>
 <img src="./images/8ball.png" width="100">
+
+<br>
+<h>quiz app</h>
+<br>
+<img src="./images/quiz.png" width="100">
+
+<br>
+<h>Forecast app</h>
+<br>
+<img src="./images/8ball.png" width="100">
+
+<br>
+<h>Facebook layout app (needs more work)</h>
+<br>
+<img src="./images/fbookNotDone.png" width="100">
+
+<br>
+<h>BMI calc</h>
+<br>
+<img src="./images/bmi_5.png" width="100">
+<img src="./images/bmi_1.png" width="100"> <img src="./images/bmi_2.png" width="100">
+<img src="./images/bmi_3.png" width="100"> <img src="./images/bmi_4.png" width="100"> 
+
+<br>
+<h>Egg timer app</h>
+<br>
+<img src="./images/egg.png" width="100">
+
+<br>
+<h>Roll dice app</h>
+<br>
+<img src="./images/8ball.png" width="100">
+
+<br>
+<h>Business card layout</h>
+<br>
+<img src="./images/card.png" width="100">
+
 
 
