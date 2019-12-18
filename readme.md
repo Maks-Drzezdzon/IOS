@@ -38,7 +38,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <img src="./images/8ball.png" width="100">
 
 <br>
-<h>Facebook layout app (needs more work)</h>
+<h><b>Facebook layout app</b>(needs more work)</h>
 <p>making layouts with external libiraries</p>
 <br>
 <img src="./images/fbookNotDone.png" width="100">
