@@ -53,7 +53,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <br>
 <h>BMI calc</h>
 <br>
-<img src="./images/bmi_5.png" width="100">
+<img src="./images/bmi_5.png" width="300">
 <img src="./images/bmi_1.png" width="100"> <img src="./images/bmi_2.png" width="100">
 <img src="./images/bmi_3.png" width="100"> <img src="./images/bmi_4.png" width="100"> 
 
