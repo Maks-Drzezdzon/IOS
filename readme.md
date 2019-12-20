@@ -65,7 +65,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <br>
 <div class="row">
   <div class="column">
-    <img src="./images/hackernews.png" width="100"> <img src="./images/hackerrnews_2.png" width="100">
+    <img src="./images/hackernews.png" width="250"> <img src="./images/hackerrnews_2.png" width="250">
   </div>
 </div>
 
