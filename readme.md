@@ -32,12 +32,6 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 ---App demos---
 
 <br>
-<h><b>Forecast app</b></h>
-<p>pull data from api, present it, change icons to represent forecast</p>
-<br>
-<img src="./images/forecast.png" width="250">
-
-<br>
 <h><b>Facebook layout app</b>(needs more work)</h>
 <p>making layouts with external libiraries</p>
 <br>
@@ -70,6 +64,24 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 </div>
 
 <br>
+<h><b>Forecast app</b></h>
+<p>pull data from api, present it, change icons to represent forecast</p>
+<br>
+<img src="./images/forecast.png" width="250">
+
+<br>
+<h><b>quiz app</b></h>
+<p>Dynamic progress bar</p>
+<br>
+<img src="./images/quiz.png" width="250">
+
+<br>
+<h><b>Business card layout</b></h>
+<p>layout app</p>
+<br>
+<img src="./images/card.png" width="250">
+
+<br>
 <h><b>Egg timer app</b></h>
 <p></p>
 <br>
@@ -82,20 +94,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <img src="./images/dice.png" width="250">
 
 <br>
-<h><b>Business card layout</b></h>
-<p>layout app</p>
-<br>
-<img src="./images/card.png" width="250">
-
-<br>
 <h><b>8 Ball app</b></h>
 <p>basic functions, buttons, views</p>
 <br>
 <img src="./images/8ball.png" width="250">
-
-<br>
-<h><b>quiz app</b></h>
-<p>Dynamic progress bar</p>
-<br>
-<img src="./images/quiz.png" width="250">
-
