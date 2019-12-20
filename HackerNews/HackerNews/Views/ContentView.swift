@@ -12,9 +12,14 @@ struct ContentView: View {
             // uses posts data from netMgr
             // which is an observalbe
             List(networkManager.posts) { post in
-                HStack {
-                    Text(String(post.points))
-                    Text(post.title)
+                // gives button indicator
+                // expects a view
+                // view expects a url to parse
+                NavigationLink(destination: DetailView(url: post.url)){
+                    HStack {
+                        Text(String(post.points))
+                        Text(post.title)
+                        }
                 }
             }.navigationBarTitle("HackerNews")
         }.onAppear {
