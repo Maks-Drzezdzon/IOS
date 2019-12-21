@@ -26,6 +26,9 @@ https://material.io/design/environment/surfaces.html#properties
 -apple docs
 https://developer.apple.com/documentation/
 
+-indicators in xcode
+https://stackoverflow.com/questions/6662395/xcode-intellisense-meaning-of-letters-in-colored-boxes-like-f-t-c-m-p-c-k-etc
+
 -apple sf symbols free assets/icons
 https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
 
