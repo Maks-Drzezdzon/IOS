@@ -39,23 +39,24 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <p>making layouts with external libiraries</p>
 <br>
 <img src="./images/fbookNotDone.png" width="250">
-<!--
+
 <br>
 <h><b>Image Recognition App</b></h>
 <p>building off concepts learned in college with python and intergrating with IOS app</p>
 <br>
 <div class="row">
   <div class="column">
-    <img src="./images/app.png" width="300">
+    <img src="./images/plant.png" width="300">
+    <p>i overrode the text in this case because its a personal inside joke</p>
   </div>
   <div class="column">
-    <img src="./images/app.png" width="250"> <img src="./images/app.png" width="250">
+    <img src="./images/macbook.png" width="250"> <img src="./images/old%20disk.png" width="250">
   </div>
   <div class="column">
-    <img src="./images/app.png" width="250"> <img src="./images/app.png" width="250"> 
+    <img src="./images/remote.png" width="250"> <img src="./images/knife.png" width="250"> 
   </div>
 </div>
-
+<!--
 <br>
 <h><b>ToDo app</b></h>
 <p>using SwiftUI, and list layouts along with color templates to design a colorful yet to use simple UI</p>
