@@ -50,10 +50,10 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
     <p>i overrode the text in this case because its a personal inside joke</p>
   </div>
   <div class="column">
-    <img src="./images/macbook.png" width="250"> <img src="./images/old%20disk.png" width="250">
+    <img src="./images/macbook.png" width="250"> <img src="./images/old%20disk.png" width="500">
   </div>
   <div class="column">
-    <img src="./images/remote.png" width="250"> <img src="./images/knife.png" width="250"> 
+    <img src="./images/remote.png" width="250"> 
   </div>
 </div>
 <!--
