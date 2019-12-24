@@ -42,11 +42,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let results = request.results as? [VNClassificationObservation] else{
                 fatalError("model failed to proccess image")
             }
+            
             if let firstResult = results.first{
                 if firstResult.identifier.contains("flower"){
                     self.navigationItem.title = "Flower!"
                 }else{
-                    self.navigationItem.title = "Not Flower"
+                    self.navigationItem.title = firstResult.identifier
                 }
             }
             
