@@ -50,7 +50,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
     <p>i overrode the text in this case because its a personal inside joke</p>
   </div>
   <div class="column">
-    <img src="./images/macbook.png" width="250"> <img src="./images/remote.png" width="200" align="left">
+    <img src="./images/remote.png" width="200"> <img src="./images/macbook.png" width="250">
   </div>
 </div>
 <!--
@@ -70,9 +70,6 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
   </div>
 </div>
 -->
-<br>
-<br>
-<br>
 <br>
 <h><b>BMI calc</b></h>
 <p>multi view app, change color and give user feedback</p>
