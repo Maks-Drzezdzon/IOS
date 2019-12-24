@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93160B2C23B267110074D165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93160B2B23B267110074D165 /* AppDelegate.swift */; };
-		93160B2E23B267110074D165 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93160B2D23B267110074D165 /* SceneDelegate.swift */; };
-		93160B3023B267110074D165 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93160B2F23B267110074D165 /* ContentView.swift */; };
-		93160B3223B267120074D165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93160B3123B267120074D165 /* Assets.xcassets */; };
-		93160B3523B267120074D165 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93160B3423B267120074D165 /* Preview Assets.xcassets */; };
-		93160B3823B267120074D165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93160B3623B267120074D165 /* LaunchScreen.storyboard */; };
+		9302B2C623B2682E00990117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9302B2C523B2682E00990117 /* AppDelegate.swift */; };
+		9302B2C823B2682E00990117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9302B2C723B2682E00990117 /* SceneDelegate.swift */; };
+		9302B2CA23B2682E00990117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9302B2C923B2682E00990117 /* ViewController.swift */; };
+		9302B2CD23B2682E00990117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9302B2CB23B2682E00990117 /* Main.storyboard */; };
+		9302B2CF23B2682E00990117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9302B2CE23B2682E00990117 /* Assets.xcassets */; };
+		9302B2D223B2682E00990117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9302B2D023B2682E00990117 /* LaunchScreen.storyboard */; };
+		9302B2DA23B2684900990117 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9302B2D923B2684900990117 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		93160B2823B267110074D165 /* AIFoodRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIFoodRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93160B2B23B267110074D165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93160B2D23B267110074D165 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93160B2F23B267110074D165 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		93160B3123B267120074D165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		93160B3423B267120074D165 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		93160B3723B267120074D165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		93160B3923B267120074D165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9302B2C223B2682E00990117 /* AIFoodRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIFoodRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9302B2C523B2682E00990117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9302B2C723B2682E00990117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9302B2C923B2682E00990117 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9302B2CC23B2682E00990117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9302B2CE23B2682E00990117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9302B2D123B2682E00990117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9302B2D323B2682E00990117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9302B2D923B2684900990117 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		93160B2523B267110074D165 /* Frameworks */ = {
+		9302B2BF23B2682E00990117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,54 +39,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		93160B1F23B267110074D165 = {
+		9302B2B923B2682E00990117 = {
 			isa = PBXGroup;
 			children = (
-				93160B2A23B267110074D165 /* AIFoodRecognition */,
-				93160B2923B267110074D165 /* Products */,
+				9302B2C423B2682E00990117 /* AIFoodRecognition */,
+				9302B2C323B2682E00990117 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		93160B2923B267110074D165 /* Products */ = {
+		9302B2C323B2682E00990117 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93160B2823B267110074D165 /* AIFoodRecognition.app */,
+				9302B2C223B2682E00990117 /* AIFoodRecognition.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93160B2A23B267110074D165 /* AIFoodRecognition */ = {
+		9302B2C423B2682E00990117 /* AIFoodRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				93160B2B23B267110074D165 /* AppDelegate.swift */,
-				93160B2D23B267110074D165 /* SceneDelegate.swift */,
-				93160B2F23B267110074D165 /* ContentView.swift */,
-				93160B3123B267120074D165 /* Assets.xcassets */,
-				93160B3623B267120074D165 /* LaunchScreen.storyboard */,
-				93160B3923B267120074D165 /* Info.plist */,
-				93160B3323B267120074D165 /* Preview Content */,
+				9302B2C523B2682E00990117 /* AppDelegate.swift */,
+				9302B2C723B2682E00990117 /* SceneDelegate.swift */,
+				9302B2C923B2682E00990117 /* ViewController.swift */,
+				9302B2CB23B2682E00990117 /* Main.storyboard */,
+				9302B2CE23B2682E00990117 /* Assets.xcassets */,
+				9302B2D023B2682E00990117 /* LaunchScreen.storyboard */,
+				9302B2D923B2684900990117 /* Inceptionv3.mlmodel */,
+				9302B2D323B2682E00990117 /* Info.plist */,
 			);
 			path = AIFoodRecognition;
-			sourceTree = "<group>";
-		};
-		93160B3323B267120074D165 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				93160B3423B267120074D165 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93160B2723B267110074D165 /* AIFoodRecognition */ = {
+		9302B2C123B2682E00990117 /* AIFoodRecognition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93160B3C23B267120074D165 /* Build configuration list for PBXNativeTarget "AIFoodRecognition" */;
+			buildConfigurationList = 9302B2D623B2682E00990117 /* Build configuration list for PBXNativeTarget "AIFoodRecognition" */;
 			buildPhases = (
-				93160B2423B267110074D165 /* Sources */,
-				93160B2523B267110074D165 /* Frameworks */,
-				93160B2623B267110074D165 /* Resources */,
+				9302B2BE23B2682E00990117 /* Sources */,
+				9302B2BF23B2682E00990117 /* Frameworks */,
+				9302B2C023B2682E00990117 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -92,25 +87,25 @@
 			);
 			name = AIFoodRecognition;
 			productName = AIFoodRecognition;
-			productReference = 93160B2823B267110074D165 /* AIFoodRecognition.app */;
+			productReference = 9302B2C223B2682E00990117 /* AIFoodRecognition.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		93160B2023B267110074D165 /* Project object */ = {
+		9302B2BA23B2682E00990117 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Maks Drzezdzon";
 				TargetAttributes = {
-					93160B2723B267110074D165 = {
+					9302B2C123B2682E00990117 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = 93160B2323B267110074D165 /* Build configuration list for PBXProject "AIFoodRecognition" */;
+			buildConfigurationList = 9302B2BD23B2682E00990117 /* Build configuration list for PBXProject "AIFoodRecognition" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,47 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 93160B1F23B267110074D165;
-			productRefGroup = 93160B2923B267110074D165 /* Products */;
+			mainGroup = 9302B2B923B2682E00990117;
+			productRefGroup = 9302B2C323B2682E00990117 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93160B2723B267110074D165 /* AIFoodRecognition */,
+				9302B2C123B2682E00990117 /* AIFoodRecognition */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		93160B2623B267110074D165 /* Resources */ = {
+		9302B2C023B2682E00990117 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93160B3823B267120074D165 /* LaunchScreen.storyboard in Resources */,
-				93160B3523B267120074D165 /* Preview Assets.xcassets in Resources */,
-				93160B3223B267120074D165 /* Assets.xcassets in Resources */,
+				9302B2D223B2682E00990117 /* LaunchScreen.storyboard in Resources */,
+				9302B2CF23B2682E00990117 /* Assets.xcassets in Resources */,
+				9302B2CD23B2682E00990117 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		93160B2423B267110074D165 /* Sources */ = {
+		9302B2BE23B2682E00990117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93160B2C23B267110074D165 /* AppDelegate.swift in Sources */,
-				93160B2E23B267110074D165 /* SceneDelegate.swift in Sources */,
-				93160B3023B267110074D165 /* ContentView.swift in Sources */,
+				9302B2CA23B2682E00990117 /* ViewController.swift in Sources */,
+				9302B2DA23B2684900990117 /* Inceptionv3.mlmodel in Sources */,
+				9302B2C623B2682E00990117 /* AppDelegate.swift in Sources */,
+				9302B2C823B2682E00990117 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		93160B3623B267120074D165 /* LaunchScreen.storyboard */ = {
+		9302B2CB23B2682E00990117 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				93160B3723B267120074D165 /* Base */,
+				9302B2CC23B2682E00990117 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9302B2D023B2682E00990117 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9302B2D123B2682E00990117 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		93160B3A23B267120074D165 /* Debug */ = {
+		9302B2D423B2682E00990117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		93160B3B23B267120074D165 /* Release */ = {
+		9302B2D523B2682E00990117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,13 +284,11 @@
 			};
 			name = Release;
 		};
-		93160B3D23B267120074D165 /* Debug */ = {
+		9302B2D723B2682E00990117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AIFoodRecognition/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AIFoodRecognition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,13 +301,11 @@
 			};
 			name = Debug;
 		};
-		93160B3E23B267120074D165 /* Release */ = {
+		9302B2D823B2682E00990117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AIFoodRecognition/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AIFoodRecognition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -321,25 +321,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93160B2323B267110074D165 /* Build configuration list for PBXProject "AIFoodRecognition" */ = {
+		9302B2BD23B2682E00990117 /* Build configuration list for PBXProject "AIFoodRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93160B3A23B267120074D165 /* Debug */,
-				93160B3B23B267120074D165 /* Release */,
+				9302B2D423B2682E00990117 /* Debug */,
+				9302B2D523B2682E00990117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93160B3C23B267120074D165 /* Build configuration list for PBXNativeTarget "AIFoodRecognition" */ = {
+		9302B2D623B2682E00990117 /* Build configuration list for PBXNativeTarget "AIFoodRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93160B3D23B267120074D165 /* Debug */,
-				93160B3E23B267120074D165 /* Release */,
+				9302B2D723B2682E00990117 /* Debug */,
+				9302B2D823B2682E00990117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 93160B2023B267110074D165 /* Project object */;
+	rootObject = 9302B2BA23B2682E00990117 /* Project object */;
 }
