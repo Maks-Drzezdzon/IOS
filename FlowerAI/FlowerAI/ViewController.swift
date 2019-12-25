@@ -36,18 +36,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             fatalError("loading core ml model failed")
         }
         let request = VNCoreMLRequest(model: model) { (request, error) in
-            guard let results = request.results as? [VNClassificationObservation] else{
-                fatalError("model failed to proccess image")
-            }
-            
-            if let firstResult = results.first{
-                if firstResult.identifier.contains("flower"){
-                    self.navigationItem.title = "Flower!"
-                }else{
-                    self.navigationItem.title = firstResult.identifier
-                }
-            }
-            
+            let classification = request.results?.first as? VNClassificationObservation
+            self.navigationItem.title = classification?.identifier.capitalized
         }
         
         let handler = VNImageRequestHandler(ciImage: image)
