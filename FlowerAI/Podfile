@@ -6,8 +6,6 @@ target 'FlowerAI' do
   use_frameworks!
 
   # Pods for FlowerAI
-  
-pod 'Alamofire', '~> 4.4'
-pod 'SwiftyJSON'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end
