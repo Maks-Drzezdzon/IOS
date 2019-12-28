@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69ECD3FE0068D549E4E6442A /* Pods_FlowerAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77386F414641DFBA68D42919 /* Pods_FlowerAI.framework */; };
 		935628E223B3E45D00C1FED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935628E123B3E45D00C1FED8 /* AppDelegate.swift */; };
 		935628E423B3E45D00C1FED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935628E323B3E45D00C1FED8 /* SceneDelegate.swift */; };
 		935628E623B3E45D00C1FED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935628E523B3E45D00C1FED8 /* ViewController.swift */; };
@@ -15,10 +14,11 @@
 		935628EB23B3E45F00C1FED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935628EA23B3E45F00C1FED8 /* Assets.xcassets */; };
 		935628EE23B3E45F00C1FED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935628EC23B3E45F00C1FED8 /* LaunchScreen.storyboard */; };
 		935628F623B3E4C500C1FED8 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 935628F523B3E4C500C1FED8 /* FlowerClassifier.mlmodel */; };
+		EC70600D9AD895BCD1491D6A /* Pods_FlowerAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C3EF976632F10CEB91039E /* Pods_FlowerAI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		77386F414641DFBA68D42919 /* Pods_FlowerAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14741842997B45CC26D983B7 /* Pods-FlowerAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerAI.release.xcconfig"; path = "Target Support Files/Pods-FlowerAI/Pods-FlowerAI.release.xcconfig"; sourceTree = "<group>"; };
 		935628DE23B3E45D00C1FED8 /* FlowerAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		935628E123B3E45D00C1FED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		935628E323B3E45D00C1FED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +28,8 @@
 		935628ED23B3E45F00C1FED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935628EF23B3E45F00C1FED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935628F523B3E4C500C1FED8 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
-		AA6F077C8B65859BA01EAAD1 /* Pods-FlowerAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerAI.debug.xcconfig"; path = "Target Support Files/Pods-FlowerAI/Pods-FlowerAI.debug.xcconfig"; sourceTree = "<group>"; };
-		C8B8D7B1245FF96B9AC75D83 /* Pods-FlowerAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerAI.release.xcconfig"; path = "Target Support Files/Pods-FlowerAI/Pods-FlowerAI.release.xcconfig"; sourceTree = "<group>"; };
+		AD12179A147CF45C6DB41593 /* Pods-FlowerAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerAI.debug.xcconfig"; path = "Target Support Files/Pods-FlowerAI/Pods-FlowerAI.debug.xcconfig"; sourceTree = "<group>"; };
+		E8C3EF976632F10CEB91039E /* Pods_FlowerAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,20 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69ECD3FE0068D549E4E6442A /* Pods_FlowerAI.framework in Frameworks */,
+				EC70600D9AD895BCD1491D6A /* Pods_FlowerAI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361786E725077C421E984DD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8C3EF976632F10CEB91039E /* Pods_FlowerAI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FD8C027F6F29C56174FFF65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD12179A147CF45C6DB41593 /* Pods-FlowerAI.debug.xcconfig */,
+				14741842997B45CC26D983B7 /* Pods-FlowerAI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		935628D523B3E45D00C1FED8 = {
 			isa = PBXGroup;
 			children = (
 				935628E023B3E45D00C1FED8 /* FlowerAI */,
 				935628DF23B3E45D00C1FED8 /* Products */,
-				F09B0006A94CA517089459CE /* Pods */,
-				F1B98905516BD3ACE352625D /* Frameworks */,
+				3FD8C027F6F29C56174FFF65 /* Pods */,
+				361786E725077C421E984DD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,24 +93,6 @@
 				935628EF23B3E45F00C1FED8 /* Info.plist */,
 			);
 			path = FlowerAI;
-			sourceTree = "<group>";
-		};
-		F09B0006A94CA517089459CE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AA6F077C8B65859BA01EAAD1 /* Pods-FlowerAI.debug.xcconfig */,
-				C8B8D7B1245FF96B9AC75D83 /* Pods-FlowerAI.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		F1B98905516BD3ACE352625D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				77386F414641DFBA68D42919 /* Pods_FlowerAI.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +355,7 @@
 		};
 		935628F323B3E45F00C1FED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA6F077C8B65859BA01EAAD1 /* Pods-FlowerAI.debug.xcconfig */;
+			baseConfigurationReference = AD12179A147CF45C6DB41593 /* Pods-FlowerAI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,7 +373,7 @@
 		};
 		935628F423B3E45F00C1FED8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8B8D7B1245FF96B9AC75D83 /* Pods-FlowerAI.release.xcconfig */;
+			baseConfigurationReference = 14741842997B45CC26D983B7 /* Pods-FlowerAI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

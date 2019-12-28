@@ -1,8 +1,9 @@
 import UIKit
 import CoreML
 import Vision
-//import Alamofire
 import SwiftyJSON
+import Alamofire
+
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
