@@ -36,9 +36,9 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 
 <br>
 <h><b>Facebook layout app</b>(needs more work)</h>
-<p>making layouts with external libiraries</p>
+<p>making layouts with external libiraries, now with top bar being vertically scrollable</p>
 <br>
-<img src="./images/fbookNotDone.png" width="250">
+<img src="./images/fbookNotDone.png" width="250"> <img src="./images/facebook_2.png" width="250">
 
 <br>
 <h><b>Image Recognition App</b></h>

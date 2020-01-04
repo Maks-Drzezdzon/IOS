@@ -49,8 +49,18 @@ class StoryHeader: UICollectionReusableView{
 }
 
 class StoryPhotoCell: LBTAListCell<String> {
+    
+    override var item: String! {
+        didSet{
+            imageView.image = UIImage(named: item)
+        }
+    }
+    
+    let imageView = UIImageView(image: nil, contentMode: .scaleToFill)
+    
     override func setupViews() {
-        backgroundColor = .red
+        imageView.layer.cornerRadius = 10
+        stack(imageView)
     }
 }
 
@@ -61,7 +71,7 @@ class StoriesController: LBTAListController<StoryPhotoCell ,String>, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.items = ["face", "face"]
+        self.items = ["face", "face","face", "face","face", "face"]
     }
 }
 
