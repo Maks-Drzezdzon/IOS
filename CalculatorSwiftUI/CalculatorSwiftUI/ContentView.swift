@@ -44,7 +44,15 @@ enum CalculatorButtons: String {
     
 }
 
+// Env Object
+class GlobalEnviroment: ObservableObject {
+    @Published var display = ""
+}
+
+
 struct ContentView: View {
+    
+    @EnvironmentObject var env: GlobalEnviroment
     
     let buttons: [[CalculatorButtons]] = [
         [.ac, .plusMinus, .percent, .divide],
@@ -63,7 +71,7 @@ struct ContentView: View {
             VStack (spacing: 12){
                 HStack{
                     Spacer()
-                    Text("42").foregroundColor(.white).font(.system(size: 64))
+                    Text(env.display).foregroundColor(.white).font(.system(size: 64))
                 }
                 
                 ForEach(buttons, id : \.self){ row in
@@ -74,6 +82,7 @@ struct ContentView: View {
                             
                             Button(action: {
                                 // adding button functionality
+                                self.env.display = button.title
                             }) {
                                 Text(button.title)
                                 .font(.system(size: 32))
@@ -109,6 +118,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        // env obj needs to be setup in sceneDelegate too
+        // on the ContentView()
+        ContentView().environmentObject(GlobalEnviroment())
     }
 }
