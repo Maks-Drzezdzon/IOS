@@ -4,6 +4,7 @@ enum CalculatorButtons: String {
     
     case zero, one, two, three, four, five, six, seven, eight, nine
     case equals, plus, minus, multiply, divide
+    case decimal
     case ac, plusMinus, percent
     
     var title: String {
@@ -23,6 +24,8 @@ enum CalculatorButtons: String {
         case .multiply: return "*"
         case .plusMinus: return "+/-"
         case .percent: return "%"
+        case .equals: return "="
+        case .decimal: return "."
         default:
             return "AC"
         }
@@ -30,7 +33,7 @@ enum CalculatorButtons: String {
     
     var backgroundColor: Color {
         switch  self {
-        case .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine:
+        case .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .decimal:
             return Color(.darkGray)
         case .ac, .plusMinus, .percent:
             return Color(.lightGray)
@@ -45,9 +48,10 @@ struct ContentView: View {
     
     let buttons: [[CalculatorButtons]] = [
         [.ac, .plusMinus, .percent, .divide],
-        [.seven, .eight, .nine, .minus],
+        [.seven, .eight, .nine, .multiply],
         [.four, .five, .six, .minus],
         [.one, .two, .three, .plus],
+        [.zero, .decimal, .equals]
     ]
     
     var body: some View {
@@ -67,12 +71,20 @@ struct ContentView: View {
                     HStack(spacing: 12){
                         ForEach(row, id: \.self){ button in
                             // ToDo if val is not an int change to a different color
-                            Text(button.title)
+                            
+                            Button(action: {
+                                // adding button functionality
+                            }) {
+                                Text(button.title)
                                 .font(.system(size: 32))
-                                .frame(width: self.buttonWidth(), height: self.buttonWidth())
+                                .frame(width:
+                                    self.buttonWidth(button: button),
+                                       height: (UIScreen.main.bounds.width - 5 * 12) / 4)
                                 .foregroundColor(.white)
                                 .background(button.backgroundColor)
-                                .cornerRadius(self.buttonWidth())
+                                .cornerRadius(self.buttonWidth(button: button))
+                            }
+                            
                         }
                     }
                 }
@@ -80,7 +92,15 @@ struct ContentView: View {
             }.padding(.bottom)
         }
     }
-    func buttonWidth() -> CGFloat{
+    func buttonWidth(button : CalculatorButtons) -> CGFloat{
+        
+        if button == .zero {
+            // button is twice the len of other buttons
+            // and has no gap
+            let zeroGap = CGFloat(4 * 12)
+            return (UIScreen.main.bounds.width - zeroGap) / 4 * 2
+        }
+        
         // this prevents buttons fit the screen
         let gaps = CGFloat(5 * 12)
         return (UIScreen.main.bounds.width - gaps) / 4
