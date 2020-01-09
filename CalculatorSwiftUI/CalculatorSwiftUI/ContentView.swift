@@ -99,6 +99,7 @@ struct CalculatorButtonView: View {
     
     var button : CalculatorButtons
     
+    // ToDo read more about global env objects
     @EnvironmentObject var env : GlobalEnviroment
     
     var body: some View{
