@@ -2,16 +2,35 @@ import SwiftUI
 
 enum CalculatorButtons: String {
     
-    case zero, one, two, three, four, five, six
+    case zero, one, two, three, four, five, six, seven, eight, nine
     case equals, plus, minus, multiply, divide
     case ac, plusMinus, percent
     
-    var title:
-    // do things in the morning :D
+    var title: String {
+        switch self {
+        case .zero: return "0"
+        case .one: return "1"
+        case .two: return "2"
+        case .three: return "3"
+        case .four: return "4"
+        case .five: return "5"
+        case .six: return "6"
+        case .seven: return "7"
+        case .eight: return "8"
+        case .nine: return "9"
+        case .plus: return "+"
+        case .minus: return "-"
+        case .multiply: return "*"
+        case .plusMinus: return "+/-"
+        case .percent: return "%"
+        default:
+            return "AC"
+        }
+    }
     
     var backgroundColor: Color {
         switch  self {
-        case .zero, .one, .two, .three, .four, .five, .six:
+        case .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine:
             return Color(.darkGray)
         case .ac, .plusMinus, .percent:
             return Color(.lightGray)
@@ -26,6 +45,7 @@ struct ContentView: View {
     
     let buttons: [[CalculatorButtons]] = [
         [.ac, .plusMinus, .percent, .divide],
+        [.seven, .eight, .nine, .minus],
         [.four, .five, .six, .minus],
         [.one, .two, .three, .plus],
     ]
@@ -47,7 +67,7 @@ struct ContentView: View {
                     HStack(spacing: 12){
                         ForEach(row, id: \.self){ button in
                             // ToDo if val is not an int change to a different color
-                            Text(button.rawValue)
+                            Text(button.title)
                                 .font(.system(size: 32))
                                 .frame(width: self.buttonWidth(), height: self.buttonWidth())
                                 .foregroundColor(.white)
