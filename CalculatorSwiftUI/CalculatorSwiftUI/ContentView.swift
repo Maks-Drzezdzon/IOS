@@ -1,12 +1,29 @@
 import SwiftUI
 
+enum CalculatorButtons: String {
+    
+    case zero, one, two, three, four, five, six
+    case equals, plus, minus, multiply, divide
+    case ac, plusMinus, percent
+    
+    var background: Color {
+        switch  self {
+        case .zero:
+            return Color(.darkGray)
+        case .ac:
+            return Color(.lightGray)
+        default:
+            return .orange
+        }
+    }
+    
+}
+
 struct ContentView: View {
     
-    let buttons = [
-        ["7", "8", "9" , "x"],
-        ["4", "5", "6" , "-"],
-        ["1", "2", "3" , "+"],
-        ["0", "AC", "." , "="]
+    let buttons: [[CalculatorButtons]] = [
+        [.four, .five, .six, .minus],
+        [.one, .two, .three, .plus],
     ]
     
     var body: some View {
@@ -26,7 +43,7 @@ struct ContentView: View {
                     HStack(spacing: 12){
                         ForEach(row, id: \.self){ button in
                             // ToDo if val is not an int change to a different color
-                            Text(button)
+                            Text(button.rawValue)
                                 .font(.system(size: 32))
                                 .frame(width: self.buttonWidth(), height: self.buttonWidth())
                                 .foregroundColor(.white)
