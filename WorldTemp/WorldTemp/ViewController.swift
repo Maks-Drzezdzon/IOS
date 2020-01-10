@@ -1,20 +1,18 @@
-//
-//  ViewController.swift
-//  WorldTemp
-//
-//  Created by Maks Drzezdzon on 08/01/2020.
-//  Copyright © 2020 Maks Drzezdzon. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // origin x and y to draw out UI
+        let firstFrame = CGRect(x: 160, y: 240, width: 100, height: 150)
+        let firstView = UIView(frame: firstFrame)
+        firstView.backgroundColor = UIColor.blue
+        view.addSubview(firstView)
+        
+        
     }
-
-
+    
 }
 
