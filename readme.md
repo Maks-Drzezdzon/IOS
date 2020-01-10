@@ -112,6 +112,16 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <br>
 <img src="./images/quiz.png" width="250">
 
+<!--<br>
+<h><b>Calculator In SwiftUI</b></h>
+<p>Using more SwiftUI to stay ontop of it along with using enums, global variables to inflate UI buttons</p>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="./images/calculator_1.png" width="300">
+  </div>
+</div>-->
+
 <br>
 <h><b>Business card layout</b></h>
 <p>layout app</p>
