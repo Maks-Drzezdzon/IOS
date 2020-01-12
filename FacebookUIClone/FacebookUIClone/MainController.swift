@@ -1,11 +1,3 @@
-//
-//  MainController.swift
-//  FacebookUIClone
-//
-//  Created by Maks Drzezdzon on 11/11/2019.
-//  Copyright © 2019 Maks Drzezdzon. All rights reserved.
-//
-
 import UIKit
 import LBTATools
 
@@ -56,22 +48,50 @@ class StoryPhotoCell: LBTAListCell<String> {
         }
     }
     
-    let imageView = UIImageView(image: nil, contentMode: .scaleToFill)
+    
+    let imageView = UIImageView(image: nil, contentMode: .scaleAspectFill)
+    let nameLabel = UILabel(text: "User name", font: .boldSystemFont(ofSize: 14), textColor: .white)
     
     override func setupViews() {
         imageView.layer.cornerRadius = 10
+        
+        
         stack(imageView)
+        
+        setupGradientLayer()
+        
+        // UIview wil push it down by taking up the space
+        stack(UIView(), nameLabel).withMargins(.allSides(8))
     }
+    
+    let gradientLayer = CAGradientLayer()
+    
+    fileprivate func setupGradientLayer(){
+        
+        gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        // color range
+        gradientLayer.locations = [0.5 ,1]
+        layer.cornerRadius = 10
+        clipsToBounds = true
+        layer.addSublayer(gradientLayer)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        // sets bounds for color frame to the [0.5 , 1]
+        gradientLayer.frame = bounds
+    }
+    
 }
 
 class StoriesController: LBTAListController<StoryPhotoCell ,String>, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: 100, height: view.frame.height)
+        return .init(width: 100, height: view.frame.height - 24)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.items = ["face", "face","face", "face","face", "face"]
+        self.items = ["Image", "face","Image", "face","Image", "face"]
     }
 }
 
