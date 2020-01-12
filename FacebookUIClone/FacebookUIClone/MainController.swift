@@ -125,7 +125,7 @@ class MainController: LBTAListHeaderController<PostCell, String, StoryHeader>, U
         let titleView = UIView(backgroundColor: .yellow)
         titleView.frame = .init(x: 0, y: 0, width: width, height: height)
         
-        titleView.addSubview(logoImageView)
+        titleView.hstack(logoImageView.withWidth(120), UIView().withWidth(width))
         
         navigationItem.titleView = titleView
         
