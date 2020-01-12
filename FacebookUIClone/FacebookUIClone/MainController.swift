@@ -117,6 +117,7 @@ class MainController: LBTAListHeaderController<PostCell, String, StoryHeader>, U
     }
     
     let logoImageView = UIImageView(image: UIImage(named: "logo"), contentMode: .scaleAspectFill)
+    let searchButton = UIButton(title: "Search", titleColor: .black)
     
     fileprivate func setupNavBar(){
         // 120 or the width and 8 + 8 for edges = 16, 60 for each button
@@ -126,11 +127,11 @@ class MainController: LBTAListHeaderController<PostCell, String, StoryHeader>, U
         let titleView = UIView(backgroundColor: .clear)
         titleView.frame = .init(x: 0, y: 0, width: width, height: height)
         
-        let searchButton = UIButton(title: "Search", titleColor: .black)
+        
         // let messageButton = UIButton(title: "Message", titleColor: .black)
         
         titleView.hstack(logoImageView.withWidth(120), UIView(backgroundColor: .clear).withWidth(width), searchButton.withWidth(60)) // messageButton.withWidth(60))
-        
+    
         navigationItem.titleView = titleView
         
     }
@@ -141,7 +142,8 @@ class MainController: LBTAListHeaderController<PostCell, String, StoryHeader>, U
         let offset = scrollView.contentOffset.y + safeAreaTop
         
         let alpha: CGFloat = 1 - ((scrollView.contentOffset.y + safeAreaTop) / safeAreaTop)
-        logoImageView.alpha = alpha
+        
+        [logoImageView, searchButton].forEach{$0.alpha = alpha}
         
         // print(scrollView.contentOffset.y)
         // reverse offset to -offset so it scrolls up and not down
