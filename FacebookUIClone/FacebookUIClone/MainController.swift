@@ -112,7 +112,25 @@ class MainController: LBTAListHeaderController<PostCell, String, StoryHeader>, U
         collectionView.backgroundColor = .init(white: 0.9, alpha: 1)
         
         self.items = ["test", "backgroud", "2", "3"]
+        
+        setupNavBar()
     }
+    
+    let logoImageView = UIImageView(image: UIImage(named: "logo"), contentMode: .scaleAspectFill)
+    
+    fileprivate func setupNavBar(){
+        let width = view.frame.width
+        let height = view.frame.height
+        
+        let titleView = UIView(backgroundColor: .yellow)
+        titleView.frame = .init(x: 0, y: 0, width: width, height: height)
+        
+        titleView.addSubview(logoImageView)
+        
+        navigationItem.titleView = titleView
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //cell size
         return .init(width: view.frame.width, height: 400)
@@ -129,7 +147,7 @@ struct MainPreview: PreviewProvider {
     }
     struct ContainerView: UIViewControllerRepresentable {
         func makeUIViewController(context: UIViewControllerRepresentableContext<MainPreview.ContainerView>) -> UIViewController {
-            return MainController()
+            return UINavigationController(rootViewController: MainController())
         }
         
         func updateUIViewController(_ uiViewController: MainPreview.ContainerView.UIViewControllerType, context: UIViewControllerRepresentableContext<MainPreview.ContainerView>) {
