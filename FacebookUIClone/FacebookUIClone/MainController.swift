@@ -120,19 +120,33 @@ class MainController: LBTAListHeaderController<PostCell, String, StoryHeader>, U
     
     fileprivate func setupNavBar(){
         // 120 or the width and 8 + 8 for edges = 16, 60 for each button
-        let width = view.frame.width - 120 - 16 - 60 - 60
+        let width = view.frame.width - 120 - 16 - 60
         let height = view.frame.height
         
-        let titleView = UIView(backgroundColor: .yellow)
+        let titleView = UIView(backgroundColor: .clear)
         titleView.frame = .init(x: 0, y: 0, width: width, height: height)
         
         let searchButton = UIButton(title: "Search", titleColor: .black)
-        let messageButton = UIButton(title: "Message", titleColor: .black)
+        // let messageButton = UIButton(title: "Message", titleColor: .black)
         
-        titleView.hstack(logoImageView.withWidth(120), UIView(backgroundColor: .red).withWidth(width), searchButton.withWidth(60), messageButton.withWidth(60))
+        titleView.hstack(logoImageView.withWidth(120), UIView(backgroundColor: .clear).withWidth(width), searchButton.withWidth(60)) // messageButton.withWidth(60))
         
         navigationItem.titleView = titleView
         
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let safeAreaTop: CGFloat = 88
+        // offset is -88 with 88 its 0
+        let offset = scrollView.contentOffset.y + safeAreaTop
+        
+        let alpha: CGFloat = 1 - ((scrollView.contentOffset.y + safeAreaTop) / safeAreaTop)
+        logoImageView.alpha = alpha
+        
+        // print(scrollView.contentOffset.y)
+        // reverse offset to -offset so it scrolls up and not down
+        // min sets it to 0 - -offset so it stays ontop
+        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
