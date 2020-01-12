@@ -119,13 +119,17 @@ class MainController: LBTAListHeaderController<PostCell, String, StoryHeader>, U
     let logoImageView = UIImageView(image: UIImage(named: "logo"), contentMode: .scaleAspectFill)
     
     fileprivate func setupNavBar(){
-        let width = view.frame.width
+        // 120 or the width and 8 + 8 for edges = 16, 60 for each button
+        let width = view.frame.width - 120 - 16 - 60 - 60
         let height = view.frame.height
         
         let titleView = UIView(backgroundColor: .yellow)
         titleView.frame = .init(x: 0, y: 0, width: width, height: height)
         
-        titleView.hstack(logoImageView.withWidth(120), UIView().withWidth(width))
+        let searchButton = UIButton(title: "Search", titleColor: .black)
+        let messageButton = UIButton(title: "Message", titleColor: .black)
+        
+        titleView.hstack(logoImageView.withWidth(120), UIView(backgroundColor: .red).withWidth(width), searchButton.withWidth(60), messageButton.withWidth(60))
         
         navigationItem.titleView = titleView
         
