@@ -39,9 +39,6 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 <p>making layouts with external libiraries, now with top bar being vertically scrollable, added logo and fade on button and navigation bar</p>
 <br>
 <div class="row">
-  <div class="column">
-    <img src="./images/facebook_1.png" width="250"> <img src="./images/facebook_2.png" width="250">
-  </div>
     <div class="column">
     <img src="./images/facebook_4.png" width="250"> <img src="./images/facebook_3.png" width="250">
   </div>
