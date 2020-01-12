@@ -137,7 +137,10 @@ class MainController: LBTAListHeaderController<PostCell, String, StoryHeader>, U
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let safeAreaTop: CGFloat = 88
+        //replace with calculation for other phone screens
+        let calculateSafeArea = UIApplication.shared.windows.filter{$0.isKeyWindow}.first?.safeAreaInsets.top ?? 0
+        let safeAreaTop: CGFloat = calculateSafeArea + (navigationController?.navigationBar.frame.height ?? 0)
+        
         // offset is -88 with 88 its 0
         let offset = scrollView.contentOffset.y + safeAreaTop
         
