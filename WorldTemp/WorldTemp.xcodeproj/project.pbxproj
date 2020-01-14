@@ -13,6 +13,7 @@
 		9324D48A23C69E7C00CBEBF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9324D48823C69E7C00CBEBF8 /* Main.storyboard */; };
 		9324D48C23C69E7D00CBEBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9324D48B23C69E7D00CBEBF8 /* Assets.xcassets */; };
 		9324D48F23C69E7D00CBEBF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9324D48D23C69E7D00CBEBF8 /* LaunchScreen.storyboard */; };
+		9396763923CE721100D028A1 /* ConcersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396763823CE721100D028A1 /* ConcersionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9324D48B23C69E7D00CBEBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9324D48E23C69E7D00CBEBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9324D49023C69E7D00CBEBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9396763823CE721100D028A1 /* ConcersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcersionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9324D48B23C69E7D00CBEBF8 /* Assets.xcassets */,
 				9324D48D23C69E7D00CBEBF8 /* LaunchScreen.storyboard */,
 				9324D49023C69E7D00CBEBF8 /* Info.plist */,
+				9396763823CE721100D028A1 /* ConcersionViewController.swift */,
 			);
 			path = WorldTemp;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				9324D48723C69E7C00CBEBF8 /* ViewController.swift in Sources */,
 				9324D48323C69E7C00CBEBF8 /* AppDelegate.swift in Sources */,
 				9324D48523C69E7C00CBEBF8 /* SceneDelegate.swift in Sources */,
+				9396763923CE721100D028A1 /* ConcersionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
