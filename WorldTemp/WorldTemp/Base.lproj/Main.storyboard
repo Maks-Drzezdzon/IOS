@@ -77,6 +77,7 @@
                     </view>
                     <connections>
                         <outlet property="celsiousLabel" destination="Hqp-i9-X6b" id="pbp-ud-yQv"/>
+                        <outlet property="textField" destination="7fF-3o-VkW" id="O3L-FF-Vuc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
