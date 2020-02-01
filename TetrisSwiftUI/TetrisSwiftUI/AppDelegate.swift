@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  TetrisSwiftUI
-//
-//  Created by Maks Drzezdzon on 22/01/2020.
-//  Copyright © 2020 Maks Drzezdzon. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
