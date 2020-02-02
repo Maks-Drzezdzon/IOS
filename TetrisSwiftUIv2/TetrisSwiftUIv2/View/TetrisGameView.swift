@@ -21,7 +21,7 @@ struct TetrisGameView: View{
             ForEach(0...rows-1, id:\.self){ (row: Int) in
                 Path{ path in
                     let x = xoffset + blockSize * CGFloat(column)
-                    let y = boundingReact.height - yoffset - blockSize*CGFloat(rows - 1)
+                    let y = boundingReact.height - yoffset - blockSize*CGFloat(row+1)
                     
                     let rect = CGRect(x: x, y: y, width: blockSize, height: blockSize)
                     path.addRect(rect)

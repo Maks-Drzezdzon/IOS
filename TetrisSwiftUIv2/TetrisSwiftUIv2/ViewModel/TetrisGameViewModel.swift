@@ -13,6 +13,10 @@ class TetrisGameViewModel: ObservableObject {
         gameBoard = Array(repeating: Array(repeating: TetrisGameSquare(color: Color.tetrisBlack), count: numRows), count: numColumns)
     }
     
+    func squareClicked(row: Int, column: Int){
+        return 0
+    }
+    
 }
 
 struct TetrisGameSquare {
