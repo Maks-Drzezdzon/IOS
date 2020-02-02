@@ -14,7 +14,11 @@ class TetrisGameViewModel: ObservableObject {
     }
     
     func squareClicked(row: Int, column: Int){
-        return 0
+        if gameBoard[column][row].color == Color.tetrisBlack {
+            gameBoard[column][row].color = Color.tetrisRed
+        }else{
+            gameBoard[column][row].color = Color.tetrisBlack
+        }
     }
     
 }

@@ -27,6 +27,9 @@ struct TetrisGameView: View{
                     path.addRect(rect)
                 }
                 .fill(self.tetrisGame.gameBoard[column][row].color)
+                .onTapGesture {
+                    self.tetrisGame.squareClicked(row: row, column: column)
+                }
             }
             
         }
