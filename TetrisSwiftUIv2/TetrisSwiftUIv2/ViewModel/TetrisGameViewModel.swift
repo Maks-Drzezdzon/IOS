@@ -2,15 +2,38 @@ import SwiftUI
 
 
 class TetrisGameViewModel: ObservableObject {
-    var numRows: Int
-    var numColumns: Int
-    @Published var gameBoard: [[TetrisGameSquare]]
+    @Published var tetrisGameModel = TetrisGameModel()
     
-    init(numRows: Int = 23, numColumns: Int = 10) {
-        self.numRows = numRows
-        self.numColumns = numColumns
+    
+    var numRows: Int { tetrisGameModel.numRows }
+    var numColumns: Int { tetrisGameModel.numColumns }
+    @Published var gameBoard: [[TetrisGameSquare]]{
         
-        gameBoard = Array(repeating: Array(repeating: TetrisGameSquare(color: Color.tetrisBlack), count: numRows), count: numColumns)
+    }
+    
+    func convertToSquare(block: TetrisGmaeBlock) -> TetrisGameSquare {
+        
+    }
+    
+    func getColor(blockType: BlockType?) -> Color {
+        switch blockType {
+        case .i:
+            return .tetrisLightBlue
+        case .j:
+            return .tetrisLightBlue
+        case .l:
+            return .tetrisLightBlue
+        case .o:
+            return .tetrisLightBlue
+        case .s:
+            return .tetrisLightBlue
+        case .t:
+            return .tetrisLightBlue
+        case .z:
+            return .tetrisLightBlue
+        default:
+            return .tetrisBlack
+        }
     }
     
     func squareClicked(row: Int, column: Int){

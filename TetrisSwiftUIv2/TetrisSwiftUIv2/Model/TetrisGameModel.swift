@@ -8,6 +8,7 @@ class TetrisGameModel: ObservableObject {
     @Published var gameBoard: [[TetrisGmaeBlock?]]
     
     init(numRows: Int = 23, numColumns: Int = 10) {
+        // board construction 
         self.numRows = numRows
         self.numColumns = numColumns
         
