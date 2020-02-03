@@ -1,5 +1,5 @@
 import SwiftUI
-
+import Combine
 
 class TetrisGameViewModel: ObservableObject {
     @Published var tetrisGameModel = TetrisGameModel()
@@ -9,6 +9,14 @@ class TetrisGameViewModel: ObservableObject {
     var numColumns: Int { tetrisGameModel.numColumns }
     var gameBoard: [[TetrisGameSquare]]{
         tetrisGameModel.gameBoard.map { $0.map(convertToSquare) }
+    }
+    
+    var anyCancellable: AnyCancellable?
+    
+    init() {
+        anyCancellable = tetrisGameModel.objectWillChange.sink{
+            self.objectWillChange.send()
+        }
     }
     
     func convertToSquare(block: TetrisGameBlock?) -> TetrisGameSquare {
