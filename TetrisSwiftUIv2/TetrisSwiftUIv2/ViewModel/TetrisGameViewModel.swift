@@ -7,12 +7,12 @@ class TetrisGameViewModel: ObservableObject {
     
     var numRows: Int { tetrisGameModel.numRows }
     var numColumns: Int { tetrisGameModel.numColumns }
-    @Published var gameBoard: [[TetrisGameSquare]]{
-        
+    var gameBoard: [[TetrisGameSquare]]{
+        tetrisGameModel.gameBoard.map { $0.map(convertToSquare) }
     }
     
-    func convertToSquare(block: TetrisGmaeBlock) -> TetrisGameSquare {
-        
+    func convertToSquare(block: TetrisGmaeBlock?) -> TetrisGameSquare {
+        return TetrisGameSquare(color: getColor(blockType: block?.blockType))
     }
     
     func getColor(blockType: BlockType?) -> Color {
@@ -20,17 +20,17 @@ class TetrisGameViewModel: ObservableObject {
         case .i:
             return .tetrisLightBlue
         case .j:
-            return .tetrisLightBlue
+            return .tetrisDarkBlue
         case .l:
-            return .tetrisLightBlue
+            return .tetrisOrange
         case .o:
-            return .tetrisLightBlue
+            return .tetrisYellow
         case .s:
-            return .tetrisLightBlue
+            return .tetrisGreen
         case .t:
-            return .tetrisLightBlue
+            return .tetrisPurple
         case .z:
-            return .tetrisLightBlue
+            return .tetrisRed
         default:
             return .tetrisBlack
         }
