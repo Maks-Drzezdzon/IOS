@@ -11,7 +11,7 @@ class TetrisGameViewModel: ObservableObject {
         tetrisGameModel.gameBoard.map { $0.map(convertToSquare) }
     }
     
-    func convertToSquare(block: TetrisGmaeBlock?) -> TetrisGameSquare {
+    func convertToSquare(block: TetrisGameBlock?) -> TetrisGameSquare {
         return TetrisGameSquare(color: getColor(blockType: block?.blockType))
     }
     
@@ -37,11 +37,7 @@ class TetrisGameViewModel: ObservableObject {
     }
     
     func squareClicked(row: Int, column: Int){
-        if gameBoard[column][row].color == Color.tetrisBlack {
-            gameBoard[column][row].color = Color.tetrisRed
-        }else{
-            gameBoard[column][row].color = Color.tetrisBlack
-        }
+        tetrisGameModel.blockClicked(row: row, column: column)
     }
     
 }
