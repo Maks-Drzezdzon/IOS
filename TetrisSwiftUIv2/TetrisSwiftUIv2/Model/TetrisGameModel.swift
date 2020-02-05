@@ -47,6 +47,24 @@ class TetrisGameModel: ObservableObject {
         }
         
         // move block
+        let newTetrimino = currentTetrimino.moveBy(row: -1, column: 0)
+        if isValidTetremino(testTetrmino: newTetrimino){
+            tetremino = newTetrimino
+            return
+        }
+        
+    }
+    func isValidTetremino(testTetrmino: Tetremino) -> Bool {
+        for block in testTetrmino.blocks{
+            let row = testTetrmino.origin.row + block.row
+            if row < 0 || row >= numRows { return false }
+            
+            let column = testTetrmino.origin.column + block.column
+            if column < 0 || column >= numColumns { return false }
+            
+            if gameBoard[column][row] != nil { return false }
+        }
+        return true
     }
 }
 
