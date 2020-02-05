@@ -8,6 +8,10 @@ class TetrisGameModel: ObservableObject {
     @Published var gameBoard: [[TetrisGameBlock?]]
     @Published var tetremino: Tetremino?
     
+    var timer: Timer?
+    var speed: Double
+    
+    
     init(numRows: Int = 23, numColumns: Int = 10) {
         // board construction 
         self.numRows = numRows
@@ -15,6 +19,7 @@ class TetrisGameModel: ObservableObject {
         
         gameBoard = Array(repeating: Array(repeating: nil, count: numRows), count: numColumns)
         tetremino = Tetremino(origin: BlockLocation(row: 22, column: 4), blockType: .i)
+        speed = 0.1
     }
     
     func blockClicked(row: Int, column: Int){
@@ -25,6 +30,24 @@ class TetrisGameModel: ObservableObject {
         }
     }
     
+    func resumeGame(){
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: speed, repeats: true, block: runEngine)
+    }
+
+    func pauseGame(){
+        timer?.invalidate()
+    }
+
+    func runEngine(timer: Timer){
+        // spawn new block
+        guard let currentTetrimino = tetremino else{
+            tetremino = Tetremino(origin: BlockLocation(row: 22, column: 4), blockType: .i)
+            return
+        }
+        
+        // move block
+    }
 }
 
 struct Tetremino {
@@ -38,6 +61,11 @@ struct Tetremino {
             BlockLocation(row: 0, column: 1),
             BlockLocation(row: 0, column: 2)
         ]
+    }
+    
+    func moveBy(row: Int, column: Int) -> Tetremino{
+        let newOrigin = BlockLocation(row: origin.row + row, column: origin.column + column)
+        return Tetremino(origin: newOrigin, blockType: blockType)
     }
 }
 
