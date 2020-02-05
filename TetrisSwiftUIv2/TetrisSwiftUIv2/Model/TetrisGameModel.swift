@@ -40,9 +40,13 @@ class TetrisGameModel: ObservableObject {
     }
 
     func runEngine(timer: Timer){
+        
         // spawn new block
         guard let currentTetromino = tetromino else {
             tetromino = Tetromino(origin: BlockLocation(row: 22, column: 4), blockType: .i)
+            if !isValidTetremino(testTetromino: tetromino!){
+                pauseGame()
+            }
             return
         }
         
