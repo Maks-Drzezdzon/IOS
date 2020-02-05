@@ -6,7 +6,7 @@ class TetrisGameModel: ObservableObject {
     var numRows: Int
     var numColumns: Int
     @Published var gameBoard: [[TetrisGameBlock?]]
-    @Published var tetremino: Tetremino?
+    @Published var tetromino: Tetromino?
     
     var timer: Timer?
     var speed: Double
@@ -18,7 +18,7 @@ class TetrisGameModel: ObservableObject {
         self.numColumns = numColumns
         
         gameBoard = Array(repeating: Array(repeating: nil, count: numRows), count: numColumns)
-        tetremino = Tetremino(origin: BlockLocation(row: 22, column: 4), blockType: .i)
+        tetromino = Tetromino(origin: BlockLocation(row: 22, column: 4), blockType: .i)
         speed = 0.1
     }
     
@@ -41,25 +41,28 @@ class TetrisGameModel: ObservableObject {
 
     func runEngine(timer: Timer){
         // spawn new block
-        guard let currentTetrimino = tetremino else{
-            tetremino = Tetremino(origin: BlockLocation(row: 22, column: 4), blockType: .i)
+        guard let currentTetromino = tetromino else {
+            tetromino = Tetromino(origin: BlockLocation(row: 22, column: 4), blockType: .i)
             return
         }
         
         // move block
-        let newTetrimino = currentTetrimino.moveBy(row: -1, column: 0)
-        if isValidTetremino(testTetrmino: newTetrimino){
-            tetremino = newTetrimino
+        let newTetrimino = currentTetromino.moveBy(row: -1, column: 0)
+        if isValidTetremino(testTetromino: newTetrimino){
+            tetromino = newTetrimino
             return
         }
         
+        // place block
+        
+        
     }
-    func isValidTetremino(testTetrmino: Tetremino) -> Bool {
-        for block in testTetrmino.blocks{
-            let row = testTetrmino.origin.row + block.row
+    func isValidTetremino(testTetromino: Tetromino) -> Bool {
+        for block in testTetromino.blocks {
+            let row = testTetromino.origin.row + block.row
             if row < 0 || row >= numRows { return false }
             
-            let column = testTetrmino.origin.column + block.column
+            let column = testTetromino.origin.column + block.column
             if column < 0 || column >= numColumns { return false }
             
             if gameBoard[column][row] != nil { return false }
@@ -68,7 +71,7 @@ class TetrisGameModel: ObservableObject {
     }
 }
 
-struct Tetremino {
+struct Tetromino {
     var origin: BlockLocation
     var blockType: BlockType
     
@@ -81,9 +84,9 @@ struct Tetremino {
         ]
     }
     
-    func moveBy(row: Int, column: Int) -> Tetremino{
+    func moveBy(row: Int, column: Int) -> Tetromino {
         let newOrigin = BlockLocation(row: origin.row + row, column: origin.column + column)
-        return Tetremino(origin: newOrigin, blockType: blockType)
+        return Tetromino(origin: newOrigin, blockType: blockType)
     }
 }
 
