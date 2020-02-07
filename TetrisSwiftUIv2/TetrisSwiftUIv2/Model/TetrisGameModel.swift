@@ -122,6 +122,20 @@ struct Tetromino {
         }
     }
     
+    static func createNewTetromino(numRows: Int, numColumns: Int) -> Tetromino {
+        let blockType = BlockType.allCases.randomElement()!
+        
+        var maxRow = 0
+        for block in getBlocks(blockType: blockType){
+            maxRow = max(maxRow, block.row)
+        }
+        
+        let origin = BlockLocation(row: numRows - 1 - maxRow, column: (numColumns - 1)/2)
+        return Tetromino(origin: origin, blockType: blockType)
+        
+    }
+    
+    
 }
 
 struct BlockLocation {
