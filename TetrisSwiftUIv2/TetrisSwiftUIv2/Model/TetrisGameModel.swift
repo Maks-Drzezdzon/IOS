@@ -5,6 +5,7 @@ class TetrisGameModel: ObservableObject {
     // observe changes so view will update automatically
     var numRows: Int
     var numColumns: Int
+    
     @Published var gameBoard: [[TetrisGameBlock?]]
     @Published var tetromino: Tetromino?
     
@@ -20,6 +21,7 @@ class TetrisGameModel: ObservableObject {
         gameBoard = Array(repeating: Array(repeating: nil, count: numRows), count: numColumns)
         tetromino = Tetromino(origin: BlockLocation(row: 22, column: 4), blockType: .i)
         speed = 0.1
+        resumeGame()
     }
     
     func blockClicked(row: Int, column: Int){
@@ -99,12 +101,7 @@ struct Tetromino {
     var blockType: BlockType
     
     var blocks:[BlockLocation] {
-        [
-            BlockLocation(row: 0, column: -1),
-            BlockLocation(row: 0, column: 0),
-            BlockLocation(row: 0, column: 1),
-            BlockLocation(row: 0, column: 2)
-        ]
+        return Tetromino.getBlocks(blockType: blockType)
     }
     
     func moveBy(row: Int, column: Int) -> Tetromino {
