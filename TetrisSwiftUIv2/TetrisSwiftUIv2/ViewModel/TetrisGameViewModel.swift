@@ -7,8 +7,14 @@ class TetrisGameViewModel: ObservableObject {
     
     var numRows: Int { tetrisGameModel.numRows }
     var numColumns: Int { tetrisGameModel.numColumns }
-    var gameBoard: [[TetrisGameSquare]]{
-        tetrisGameModel.gameBoard.map { $0.map(convertToSquare) }
+    var gameBoard: [[TetrisGameSquare]] {
+        var board = tetrisGameModel.gameBoard.map { $0.map(convertToSquare) }
+        
+        if let shadow = tetrisGameModel.shadow {
+            for blockLocation in shadow.blocks {
+                board[blockLocation.column + shadow.origin.column][blockLocation.row + shadow.origin.row] = TetrisGameSquare(color: getShadowColor(blockType: shadow.blockType))
+            }
+        }
     }
     
     var anyCancellable: AnyCancellable?
@@ -39,6 +45,8 @@ class TetrisGameViewModel: ObservableObject {
             return .tetrisPurple
         case .z:
             return .tetrisRed
+        case .none:
+            return .tetrisBlack
         default:
             return .tetrisBlack
         }
