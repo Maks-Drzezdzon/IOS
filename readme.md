@@ -53,7 +53,7 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
     <img src="./images/tetrisv3.png" width="300">
   </div>
   <div class="column">
-    <img src="./images/tetrisv1.png" width="200"> <img src="./images/tetrisv2.png" width="250">
+    <img src="./images/tetrisv1.png" width="200"> <img src="./images/tetrisv2.png" width="200">
   </div>
 </div>
 <!--
