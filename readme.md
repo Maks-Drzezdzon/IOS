@@ -72,6 +72,16 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 </div>
 -->
 <br>
+<h><b>HackerNews Demo app</b></h>
+<p>multi view app, parse data and provide navigation, use webview to open web links</p>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="./images/hackernews.png" width="250"> <img src="./images/hackerrnews_2.png" width="250">
+  </div>
+</div>
+
+<br>
 <h><b>Image Recognition App</b></h>
 <p>building off concepts learned in college with python and intergrating with IOS app</p>
 <br>
@@ -114,16 +124,6 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
   </div>
   <div class="column">
     <img src="./images/bmi_3.png" width="250"> <img src="./images/bmi_4.png" width="250"> 
-  </div>
-</div>
-
-<br>
-<h><b>HackerNews Demo app</b></h>
-<p>multi view app, parse data and provide navigation, use webview to open web links</p>
-<br>
-<div class="row">
-  <div class="column">
-    <img src="./images/hackernews.png" width="250"> <img src="./images/hackerrnews_2.png" width="250">
   </div>
 </div>
 
