@@ -111,6 +111,17 @@ struct Tetromino {
         let newOrigin = BlockLocation(row: origin.row + row, column: origin.column + column)
         return Tetromino(origin: newOrigin, blockType: blockType)
     }
+    
+    static func getBlocks(blockType: BlockType) -> [BlockLocation] {
+        
+        switch blockType {
+        case .i:
+            return [ BlockLocation(row: 0, column: -1), BlockLocation(row: 0, column: 0), BlockLocation(row: 0, column: 1), BlockLocation(row: 0, column: 2) ]
+        default:
+            return [ BlockLocation(row: 0, column: -1), BlockLocation(row: 0, column: 0), BlockLocation(row: 0, column: 1), BlockLocation(row: 0, column: 2) ]
+        }
+    }
+    
 }
 
 struct BlockLocation {
