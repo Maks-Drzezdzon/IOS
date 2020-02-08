@@ -36,11 +36,48 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 
 <br>
 <h><b>Facebook layout app</b>(needs more work)</h>
-<p>making layouts with external libiraries, now with top bar being vertically scrollable, added logo and fade on button and navigation bar</p>
+<p>Making layouts with external libiraries, now with top bar being vertically scrollable, added logo and fade on button and navigation bar</p>
 <br>
 <div class="row">
     <div class="column">
     <img src="./images/facebook_4.png" width="250"> <img src="./images/facebook_3.png" width="250">
+  </div>
+</div>
+
+<br>
+<h><b>Tetris</b></h>
+<p>Starting on SwiftUI</p>
+<br>
+<div class="row">
+  <div class="column">
+    <!--<img src="./images/tetrisv3.png" width="300">-->
+    <p>work in prog</p>
+  </div>
+  <div class="column">
+    <img src="./images/tetrisv1.png" width="200"> <img src="./images/tetrisv2.png" width="200">
+  </div>
+</div>
+<!--
+<br>
+<h><b>Github Mobile</b></h>
+<p>building off concepts learned in college with python and intergrating with IOS app</p>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="./images/plant.png" width="300">
+  </div>
+  <div class="column">
+    <img src="./images/remote.png" width="200"> <img src="./images/macbook.png" width="250">
+  </div>
+</div>
+-->
+<br>
+<h><b>HackerNews Demo app</b></h>
+<p>multi view app, parse data and provide navigation, use webview to open web links</p>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="./images/hackernews.png" width="250"> <img src="./images/hackerrnews_2.png" width="250">
   </div>
 </div>
 
@@ -87,16 +124,6 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
   </div>
   <div class="column">
     <img src="./images/bmi_3.png" width="250"> <img src="./images/bmi_4.png" width="250"> 
-  </div>
-</div>
-
-<br>
-<h><b>HackerNews Demo app</b></h>
-<p>multi view app, parse data and provide navigation, use webview to open web links</p>
-<br>
-<div class="row">
-  <div class="column">
-    <img src="./images/hackernews.png" width="250"> <img src="./images/hackerrnews_2.png" width="250">
   </div>
 </div>
 
