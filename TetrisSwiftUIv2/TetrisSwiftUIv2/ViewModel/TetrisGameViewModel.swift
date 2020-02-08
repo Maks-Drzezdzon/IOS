@@ -18,6 +18,8 @@ class TetrisGameViewModel: ObservableObject {
     }
     
     var anyCancellable: AnyCancellable?
+    var  lastMoveLocation = CGPoint?
+    
     
     init() {
         anyCancellable = tetrisGameModel.objectWillChange.sink{
@@ -54,6 +56,10 @@ class TetrisGameViewModel: ObservableObject {
     
     func squareClicked(row: Int, column: Int){
         tetrisGameModel.blockClicked(row: row, column: column)
+    }
+    
+    func getMoveGesture() -> some Gesture {
+        return DragGesture()
     }
     
 }
