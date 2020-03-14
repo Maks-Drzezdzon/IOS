@@ -56,7 +56,7 @@ class TetrisGameModel: ObservableObject {
         // spawn new block
         guard tetromino != nil else {
             tetromino = Tetromino.createNewTetromino(numRows: numRows, numColumns: numColumns)
-            if !isValidTetremino(testTetromino: tetromino!){
+            if !isValidTetromino(testTetromino: tetromino!){
                 pauseGame()
             }
             return
@@ -92,14 +92,14 @@ class TetrisGameModel: ObservableObject {
         guard let currentTetromino = tetromino else { return false }
         
         let newTetromino = currentTetromino.moveBy(row: rowOffset, column: columnOffset)
-        if isValidTetremino(testTetromino: newTetromino){
+        if isValidTetromino(testTetromino: newTetromino){
             tetromino = newTetromino
             return true
         }
         return false
     }
     
-    func isValidTetremino(testTetromino: Tetromino) -> Bool {
+    func isValidTetromino(testTetromino: Tetromino) -> Bool {
         for block in testTetromino.blocks {
             let row = testTetromino.origin.row + block.row
             if row < 0 || row >= numRows { return false }
