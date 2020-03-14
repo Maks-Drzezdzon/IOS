@@ -62,6 +62,39 @@ class TetrisGameViewModel: ObservableObject {
         return DragGesture()
     }
     
+    func onMoveChanged(value: DragGesture.Value) {
+        guard let start = lastMoveLocation else {
+            lastMoveLocation = value.location
+            return
+        }
+        
+        let xDiff = value.location.x - start.x
+        if xDiff > 10 {
+            let _ = tetrisGameModel.moveTetrominoRight()
+            lastMoveLocation = value.location
+            return
+        }
+        
+        if xDiff < -10{
+            let _ = tetrisGameModel.moveTetrominoLeft()
+            lastMoveLocation = value.location
+            return
+        }
+        
+        let yDiff = value.location.y - start.y
+        if yDiff > 10 {
+            let _ = tetrisGameModel.dropTetromino()()
+            lastMoveLocation = value.location
+            return
+        }
+        
+        if yDiff < -10{
+            let _ = tetrisGameModel.moveTetrominoDown()()
+            lastMoveLocation = value.location
+            return
+        }
+    }
+    
 }
 
 struct TetrisGameSquare {
